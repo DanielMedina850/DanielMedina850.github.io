@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleCreaEvento.css"/>
     <title>Document</title>
 </head>
+<style>
+   
+</style>
 <body>
     <nav> <!-- navigation bar -->
         <ul>
-            <li>a href="eventos">Eventos</a></li>
-            <li>a href="crea">Crea tu evento</a></li>
-            <li><a href="inicio"><img src="imagen" alt="Inicio"></a></li>
-        </li>
+            <li><a href="eventos.html" id="eventos">Eventos</a></li>
+            <li><a href="index.html" id="logo"><img src="imagen-evento/logo.png"></a></li> </div> <!--tiene que ir el logo-->
+            <li><a href="CreaTuEvento.html" id="crea">Crea tu evento</a></li>
+            <li>
+                <div id="buscador">
+                    <button type="submit" id="lupa">
+                        <img src="imagen-evento/lupa3.png">
+                    </button>
+                
+                </div> 
+                 <!-- lupa -->
+            </li>
         </ul>
-
-        <!-- lupa -->
-        <div id="buscar">
-            <input type="text" id="buscar" placeholder="Buscar...">
+        
     </nav>
+    <br/>
 
     <!-- imagen principal-->
-    <img src=" imagen"/>
+    <div id="principal">
+    <img src="imagen-evento/rosalia.jpg"/>
+    </div>
 
     <h1>Completa tu reserva </h1>
 
@@ -29,21 +41,21 @@
     <hr size = "8px" color ="black"/>
 
     <form action="index.html">
-            <span>
+            <div>
                 <select name="queSala" id="sala" required>
                     <option value="" disabled selected >Selecciona una sala...</option>
                     <option value="sala1">Sala 1</option>
                     <option value="sala2">Sala 2</option>
                 </select>
-            </span>
+            </div>
 
-            <span>
+            <div>
                 <select name="queHora" id="hora" required>
                     <option value="" disabled selected >Selecciona una hora...</option>
                     <option value="hora1">10:00</option>
                     <option value="hora2">12:00</option>
                 </select>
-            </span>
+            </div>
 
         </br>
 

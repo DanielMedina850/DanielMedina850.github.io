@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: ;
+    font-family: monospace;
+}
+p{
+    margin: 20px;
 }
 
 body{
@@ -21,6 +24,7 @@ a{
 #IMG_badBunny{
     width: 100%;
     height: auto;
+    max-width: 800px;
 } 
 
 #contenedor_concierto{
@@ -29,6 +33,7 @@ a{
     background-color: rgb(192, 192, 192); 
     font-size: x-large;
     color: #414141;
+    flex-wrap: wrap;
 }
 
 .button{
@@ -38,13 +43,51 @@ a{
     border-radius: 5px;
 }
 
+.button:hover{
+    background-color: #868686;
+}
+
 #contenedor_concierto_texto{
 position: relative;
-margin: 10px;
+padding: 20px;
+border: 1px solid red;
 }
 
 #button_concierto{
     position: absolute;
     right: 0;
     top: 0;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+/* #button_reserva{
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-top: 30px;
+} */
+
+#aboutUs{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#contenedor_form{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
+}
+
+#opinion{
+    max-width: 550px;
 }

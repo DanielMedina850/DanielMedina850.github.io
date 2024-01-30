@@ -1,0 +1,78 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, rgb(5, 9, 77), rgb(255, 81, 238));
+    height: 60px;
+    display: flex;
+}
+
+li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family:  sans-serif;
+    height: 100%;
+    
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#logo img {
+    width: 50px;
+    height: auto;
+
+}
+
+#logo {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#buscador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+#lupa img {
+    width: 50px;
+    height: auto; 
+    border: none; 
+}
+
+#lupa {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

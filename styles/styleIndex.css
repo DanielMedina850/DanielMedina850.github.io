@@ -150,7 +150,12 @@ textarea
 } 
 
 
-input[type=submit] {
+.submit_button{
+    width: 100%;
+  }
+
+  
+  .submit_button input{
     background-color: #696969;
     color: white;
     padding: 12px 20px;
@@ -159,7 +164,6 @@ input[type=submit] {
     cursor: pointer;
     float: right;
     width: 100%;
-  
   }
   
 

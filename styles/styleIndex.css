@@ -35,6 +35,7 @@ a{
     background-color: #5a5a5a;
     padding: 10px 20px;
     float: right;
+    border-radius: 5px;
 }
 
 #contenedor_concierto_texto{

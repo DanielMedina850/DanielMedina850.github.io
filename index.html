@@ -27,8 +27,7 @@
 
     <div id="contenedor_concierto">
         <p>Este semana tenemos...</p>
-
-
+        
     <img id="IMG_badBunny" src="imagen-evento/bad_bunny.jpg" alt="bad_bunny" width="600" height="400">
     <div id="contenedor_concierto_texto"><p>MOST WANTED TOUR Bad Bunny</p>
         <p>Martes 9 abril 21:30</p>
@@ -41,7 +40,6 @@
         </a>
     </div>
     </div>
-    <div>
      <div id="aboutUs">
          <p>¿Quienes somos?</p>
          <p>Donde la emoción se encuentra con la creatividad.</p>
@@ -49,21 +47,39 @@
      </div>
 
 
-        <p>Contactanos</p>
+        <!-- FORMULARIO -->
 
-        <div id="contenedor_form">
-            <div>
-                <form>
-                    <label for="nombre">Nombre</label><br>
-                    <input type="text" id="nombre" name="nombre"><br>
-                    <label for="apellido">Apellidos</label><br>
-                    <input type="text" id="apellido" name="apellido">
-                    <label for="tel">Teléfono</label>
-                    <input type="text" id="tel" name="tel">
-                    <label for="email">email</label>
-                    <input type="text" id="email" name="email">
-                    <p><label for="opinion">Pregunta / Opinion</label></p>
-                    <textarea id="opinion" rows="4" cols="500"></textarea>
+        <div id="content_main">
+            <div id="contenedor_form">
+                <h1 class="titulo_form">
+                    Contactanos
+                </h1>
+                <form action="#">
+                    <div id="contenedor_datos">
+                        <div class="datos_user_box">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                        <div class="datos_user_box">
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" id="apellido" name="apellido">
+                        </div>
+                        <div class="datos_user_box">
+                            <label for="tel">Teléfono</label>
+                            <input type="text" id="tel" name="tel">
+                        </div>
+                        <div class="datos_user_box">
+                            <label for="email">email</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="datos_user_box">
+                            <label for="opinion">Pregunta / Opinion</label>
+                            <textarea id="opinion" rows="4" cols="500"></textarea>
+                        </div>
+                        <div class="submit_button">
+                            <input type="submit" value="Enviar"/>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

@@ -22,7 +22,7 @@
                     </button>
                 
                 </div> 
-                 <!-- lupa -->
+            
             </li>
         </ul>
         
@@ -31,25 +31,26 @@
 
     <!-- imagen principal-->
     <div id="principal">
-    <img src="imagen-evento/rosalia.jpg"/>
+    <img src="imagen-evento/canta.jpg"/>
+    <div id="mensaje">
+        <p>CREA TU EVENTO CON NOSOTROS </p>
+    </div>
     </div>
 
     <h1>Completa tu reserva </h1>
 
 
     <!-- barra separador -->
-    <hr size = "8px" color ="black"/>
+    <hr/>
 
     <form action="index.html">
-            <div>
+            <div id="seleccionar">
                 <select name="queSala" id="sala" required>
                     <option value="" disabled selected >Selecciona una sala...</option>
                     <option value="sala1">Sala 1</option>
                     <option value="sala2">Sala 2</option>
                 </select>
-            </div>
-
-            <div>
+    
                 <select name="queHora" id="hora" required>
                     <option value="" disabled selected >Selecciona una hora...</option>
                     <option value="hora1">10:00</option>
@@ -57,36 +58,43 @@
                 </select>
             </div>
 
-        </br>
-
-        <h2>Tu evento es... </h2>
-
-        <div class="teatro">Obra de Teatro </div>
-        <div class="fiesta">Fiesta </div>
-        <div class="concierto">Concierto</div>
-        <div class="monologo">Monólogo</div>
-
+            <div id="contenedor">
+                <label for="teatro">
+                    <input type="radio" id="teatro" name="categoria" value="Teatro"> Teatro
+                </label>
+                <label for="fiesta">
+                    <input type="radio" id="fiesta" name="categoria" value="Fiesta"> Fiesta
+                </label>
+                <label for="concierto">
+                    <input type="radio" id="concierto" name="categoria" value="Concierto"> Concierto
+                </label>
+                <label for="monologo">
+                    <input type="radio" id="monologo" name="categoria" value="Monólogo"> Monólogo
+                </label>
+            </div>
+            
+            
         <h2>Selecciona el dia</h2>
 
         <!-- calendario -->
 
         <div class="calendario">
-            <input type = "date" max="2024-12-31" min="2024-01-01" >
+            <img src="imagen-evento/febrero.png">
+            </div>
            
-        </div>
 
         <!-- nombre y nombre evento -->
-          <div class="rellenar">
+         <div class ="datos" >
             <label for="nombre"></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
           
             <label for="nomEvento"></label>
-            <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento" required>
-          </div>
-
+            <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
+    
 
         <!-- reservar -->
           <button type="submit">Reservar</button>
+        </div>
     
 </body>
 </html>

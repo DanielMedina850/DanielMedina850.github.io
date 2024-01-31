@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, #031859, #D904A0);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invert{ width: 50px;}
+
+#lupa{
+    background-color: #04aa6d00;
+    border: none;
+}
+
+body {margin: 0;}
+
+#link{
+
+    text-decoration: none;
+    color: aliceblue;
+   
+
+
+
+}
+

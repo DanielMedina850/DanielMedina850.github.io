@@ -33,9 +33,6 @@
     padding: 15px;
   }
 
-p{
-    margin: 20px;
-}
 
 #contenedor_titulo{ /* titulo */
     text-align: center;
@@ -59,7 +56,7 @@ a{ /*enlaces*/
     font-size: 1rem;
 }
 
-img{/*imagenes*/
+img{                  /*imagenes*/
     width: 100%;
 }
 

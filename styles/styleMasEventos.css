@@ -1,1 +1,70 @@
-img {width: 100vh; height: 100vh;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li{ /*listas*/
+    list-style: none;
+}
+
+body{ /*fondo*/
+    background-color: #ccccccff;
+}
+
+a{ /*enlaces*/
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+img{/*imagenes*/
+    width: 100%;
+    height: auto;
+}
+
+#contenedor_titulo_eventos{ /*titulo eventos*/
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin: 20px;
+    border-bottom: 2px solid black;  
+}
+
+.button{ /*botones en general*/
+    background-color: #5a5a5a;
+    padding: 20px;
+    }
+
+    #contenedor_button{
+        display: flex;
+        padding: 10px;
+        }
+
+        .button:hover{ /*hover de los botones*/
+            background-color: #868686;
+        }
+
+        #button_Monologo{ /*boton de concierto*/
+            width: 150px;
+            text-align: center;
+            }
+            
+            #button_ReservaYa{
+                width: 200px;
+                text-align: center;
+            
+             /*boton de reserva*/
+            }
+
+            #contenedor_texto{ /* contenedor del texto de la funcion*/
+                padding: 20px;
+                background-color: #ccccccff;
+                width: 100%;
+                display: block;
+                line-height: 1.8;
+                }
+

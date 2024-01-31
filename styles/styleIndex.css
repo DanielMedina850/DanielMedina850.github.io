@@ -66,9 +66,14 @@ img{/*imagenes*/
 
 .button{ /*botones en general*/
 background-color: #5a5a5a;
-float: right;
-border-radius: 7px;
 padding: 20px;
+}
+
+#contenedor_button{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 10px;
 }
 
 .button:hover{ /*hover de los botones*/
@@ -84,11 +89,15 @@ line-height: 1.8;
 }
 
 #button_concierto{ /*boton de concierto*/
-width: 100%;
+width: 150px;
+text-align: center;
 }
 
-#button_reserva{ /*boton de reserva*/
- width: 100%;
+#button_reserva{
+    width: 200px;
+    text-align: center;
+
+ /*boton de reserva*/
 }
 
 

@@ -67,9 +67,8 @@ img{/*imagenes*/
 .button{
 background-color: #5a5a5a;
 float: right;
-border-radius: 5px;
+border-radius: 7px;
 padding: 20px;
-border: 1px solid red;
 }
 
 .button:hover{
@@ -79,17 +78,17 @@ border: 1px solid red;
 #contenedor_concierto_texto{
 padding: 20px;
 background-color: #ccccccff;
-border: 1px solid red;
 width: 100%;
-display: flex;
+display: block;
+line-height: 1.8;
 }
 
 #button_concierto{
-    float: right;
+width: 100%;
 }
 
 #button_reserva{
- float: right;
+ width: 100%;
 }
 
 
@@ -101,7 +100,9 @@ display: flex;
     color: white;
     text-align: center;
     font-weight: bold;
-    padding: 40px;
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 30px;
 }
 
 #content_main{
@@ -137,19 +138,13 @@ textarea
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 3px; 
-  box-sizing: border-box;
   border-radius: 5px;
+  max-width: 100%;
 }
 
 form label{
     color: white;
 }
-
-/*caja de los datos de usuario*/
-/* .datos_user_box{
-    padding-bottom: 15px;
-} */
-
 
   /*nombres de los datos*/
 /* .datos_user_box label{
@@ -160,6 +155,7 @@ form label{
 }  */
 
 /*caja de los datos de usuario*/
+
 input[type=text]{
     border-radius: 5px;
     border-color: white;
@@ -169,11 +165,6 @@ input[type=text]{
 } 
 
   /*boton de envio*/
-   /* .submit_button{
-    width: 100%;
-  } */
-
-  /*boton de envio*/
   .submit_button input{
     background-image: radial-gradient(circle, #be169d 20%, #6a2863 100%);
     color: white;
@@ -181,17 +172,13 @@ input[type=text]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
-    width: 100%;   
+    text-align: center;
+    display: block;
+    margin: 0 auto;
   }
   
   .submit_button input:hover{
     background-image: radial-gradient(circle, #bf39a4 20%, #6e406a 100%);
-  }
-  
-
-  #col-6{
-    border: 1px solid red;
   }
 
 /*      contactanos          */

@@ -185,16 +185,19 @@ input[type=text]{
 /*      contactanos          */
 
 
-/*imagen*/
-.primeraParte{
+/*imagen+ responsive*/
+.primeraParte {
   background-image: url(https://img.freepik.com/vector-gratis/gente-bailando-fondo_1048-7872.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 500px;
-  padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    padding: 10px;
+    position: relative;
+    z-index: 1; /* imagen detras de la lista */
 }
+
 
 
 /*mensaje crear evento*/
@@ -240,8 +243,6 @@ h1{
   cursor: pointer;
   font-size: 14px; /* Ajusta el tamaño del texto */
 }
-
-
 
 
 .boton:hover{

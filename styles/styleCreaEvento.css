@@ -4,6 +4,7 @@ html, body{
     padding: 0;
 }
 
+/* Estilos para la barra de navegación */
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,19 +14,24 @@ ul {
     height: 60px;
     display: flex;
     justify-content: space-between;
-}
-
-/*a partir de aqui la pagina*/
-/*imagen*/
-.primeraParte{
+    position: relative;
+    z-index: 2; /* Asegura que la lista esté delante de otros elementos con menor z-index */
+  }
+  
+  /* Estilos para la imagen de fondo */
+  .primeraParte {
     background-image: url(https://img.freepik.com/vector-gratis/gente-bailando-fondo_1048-7872.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
     height: 500px;
     padding: 10px;
-}
+    position: relative;
+    z-index: 1; /* Asegura que la imagen esté detrás de la lista */
+  }
+  
+  
 
 
 /*mensaje crear evento*/
@@ -123,50 +129,67 @@ h2{
 
 
 
-.boton {
+/*BOTONES-TECLEADO-OTRO COLOR*/
+
+.contenedor {   /* para que exista espacio entre los botones*/
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contenedor .boton {
     background-color: pink;
     border-radius: 10px;
     border: 2px solid purple;
     color: purple;
     padding: 0.5em 1em; 
-    margin-right: 130px; /* Ajusta el margen derecho para mover los botones más a la derecha */
     cursor: pointer;
-    display: inline-block; /* Alinea los botones */
     font-size: 14px; /* Ajusta el tamaño del texto */
-}
-
-
-  @media (min-width: 320px) and (max-width: 1200px) {
-    .contenedor {
-        margin: 0 15%; /* Ajusta el margen a la izquierda y derecha */
-    }
-    
-    .boton {
-        margin: 0 0 15px 0; /* Ajusta el margen inferior entre los botones en tablets en modo vertical */
-    }
-        
-}
-
-
-
-.boton:hover{
+  }
+  
+  
+  
+  
+  .boton:hover{
     background-color:purple;
     color:pink;
-}
-
-/* Cambia el color cuando el botón está marcado */
-input[type="radio"]:checked + .boton {
+  }
+  
+  /* Cambia el color cuando el botón esta marcado */
+  input[type="radio"]:checked + .boton {
     background-color:rgb(255, 81, 238);
     color: blue;
     border-inline: rgb(255, 81, 238);
-}
-
-.oculto {
+  }
+  
+  .oculto {
     display: none;
-}
-
-
-
-
-
-
+  }
+  
+  
+  /*para pantallas pequeñas*/
+  @media (min-width: 320px) {
+    .contenedor {
+        margin: 0 10%; 
+        display: flex; 
+        flex-wrap: nowrap; 
+        justify-content: space-between; 
+    }
+    
+    .boton {
+        margin: 0; 
+    }
+  }
+  
+  
+  /*para pantallas grandes*/
+  @media (min-width: 1201px) {
+    .contenedor {
+        width: 80%; 
+        margin: 0 10% 0 auto; 
+    }
+  }
+  
+  
+  
+  
+  

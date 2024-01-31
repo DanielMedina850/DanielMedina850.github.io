@@ -4,12 +4,40 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
 p{
     margin: 20px;
 }
 
 body{
-    background-image: linear-gradient(to bottom left, rgb(5, 9, 77), rgb(255, 81, 238));
+    background-color: #ccccccff;
 }
 li{
     list-style: none;
@@ -21,20 +49,23 @@ a{
     font-size: 1rem;
 }
 
-#IMG_badBunny{
+img{
     width: 100%;
-    height: auto;
-    max-width: 800px;
+}
 
-} 
 
 #contenedor_concierto{
     padding-bottom: 40px;
     padding-top: 40px;
-    background-color: rgb(192, 192, 192); 
+    background-color: rgb(224, 224, 224); 
     font-size: x-large;
-    color: #414141;
-    
+    color: #414141; 
+}
+
+#contenedor_concierto{
+    text-align: center;
+    color: black;
+    font-size: 50px;
 }
 
 .button{
@@ -51,7 +82,7 @@ border-radius: 5px;
 position: relative;
 padding: 20px;
 justify-content: left;
-background: rgb(246, 221, 221);
+background-color: #ccccccff;
 }
 
 #button_concierto{
@@ -71,6 +102,8 @@ background: rgb(246, 221, 221);
     padding: 0 30px; 
 }
 
+
+
 /*          contactanos          */
 
 #aboutUs{
@@ -78,7 +111,7 @@ background: rgb(246, 221, 221);
     color: white;
     text-align: center;
     font-weight: bold;
-    padding: 20px;
+    padding: 40px;
 }
 
 #content_main{
@@ -90,7 +123,7 @@ background: rgb(246, 221, 221);
 
 #contenedor_form{
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     background: rgba(0, 0, 0, 0.5);
     padding: 28px;
     margin: 0 28px;
@@ -118,52 +151,56 @@ textarea
   border-radius: 5px;
 }
 
-#contenedor_datos{
+/* #contenedor_datos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
-}
+    width: 100%;
+} */
 
-/* #contenedor_datos:nth-child(2n){
-    justify-content: end;
+/*caja de los datos de usuario*/
+/* .datos_user_box{
+    padding-bottom: 15px;
 } */
 
 
-.datos_user_box{
-    padding-bottom: 15px;
-}
-  
-.datos_user_box label{
-    width: 95%;
+  /*nombres de los datos*/
+/* .datos_user_box label{
+    width: 100%;
     color: white;
     font-size: 15px;
     font-weight: 700px;
-    margin: 5px 0;
-} 
+}  */
 
-.datos_user_box input{
+/*caja de los datos de usuario*/
+input[type=text]{
     border-radius: 5px;
     border-color: white;
     height: 25px;
     outline: none;
+    width: 100%;
 } 
 
-
-.submit_button{
+  /*boton de envio*/
+   /* .submit_button{
     width: 100%;
-  }
+  } */
 
-  
+  /*boton de envio*/
   .submit_button input{
-    background-color: #696969;
+    background-color: #929292;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-    width: 100%;
+    width: 100%;   
+  }
+  
+  .submit_button input:hover{
+    background-color: #b1b1b1;
   }
   
 

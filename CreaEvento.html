@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleCreaEvento.css"/>
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+    </ul>
+
+    <div class="primeraParte">
+        <div id="mensaje">
+            <p>CREA TU EVENTO CON NOSOTROS </p>
+        </div>
+    </div>
+
+    <h1>Completa tu reserva </h1>
+    </div>
+
+    <div class="segundaParte">
+        <form action="index.html">
+            <div id="seleccionar">
+                <select name="queSala" id="sala" required>
+                    <option value="" disabled selected >Selecciona una sala...</option>
+                    <option value="sala1">Sala 1</option>
+                    <option value="sala2">Sala 2</option>
+                </select>
+    
+                <select name="queHora" id="hora" required>
+                    <option value="" disabled selected >Selecciona una hora...</option>
+                    <option value="hora1">10:00</option>
+                    <option value="hora2">12:00</option>
+                </select>
+            </div>
+            <div class="contenedor">
+                <button id="b1">Obra de teatro</button>
+                <button id="b2">Fiesta</button>
+                <button id="b3">Concierto</button>
+                <button id="b4">Monólogo</button>
+    
+            </div>
+    
+        <h2>Selecciona el dia</h2>
+        <!-- calendario -->
+        <div class="calendario">
+            <img src="imagen-evento/febrero.png">
+            </div>
+    
+        <!-- nombre y nombre evento -->
+         <div class ="datos" >
+            <label for="nombre"></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
+    
+            <label for="nomEvento"></label>
+            <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
+    
+        <!-- reservar -->
+          <button type="submit">Reservar</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

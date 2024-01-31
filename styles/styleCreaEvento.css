@@ -24,13 +24,12 @@ ul {
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
-    padding: auto;
-    
-
-    
+    padding: 10px;
 }
+
+
 /*mensaje crear evento*/
-p {
+#mensaje {
     position: absolute;
     top: 65%;
     left: 70%;
@@ -43,12 +42,19 @@ p {
    
     
 }
-
+/*Titulo:completa tu reserva*/
 h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
+    margin-top: 0px;
+    background-color: blueviolet;
+    padding-top: 40px;
+   
+    
 }
+ 
+
+
 
 hr {
     margin-top: 40px;

@@ -174,3 +174,39 @@ input[type=text]{
   }
 
 /*      contactanos          */
+
+
+
+
+
+
+/*BOTONES-TECLEADO-OTRO COLOR*/
+
+.boton {
+  background-color: pink;
+  border-radius: 10px;
+  border: 2px solid purple;
+  color: purple;
+  padding: 0.5em 1em; /* Ajusta el padding para hacer los botones más pequeños */
+  margin-right: 40px;
+  cursor: pointer;
+  display: inline-block; /* Alinea los botones en línea */
+  font-size: 14px; /* Ajusta el tamaño del texto */
+}
+
+
+.boton:hover{
+  background-color:purple;
+  color:pink;
+}
+
+/* Cambia el color cuando el botón está marcado */
+input[type="radio"]:checked + .boton {
+  background-color:rgb(255, 81, 238);
+  color: blue;
+  border-inline: rgb(255, 81, 238);
+}
+
+.oculto {
+  display: none;
+}

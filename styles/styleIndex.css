@@ -230,16 +230,23 @@ h1{
 
 .boton {
   background-color: pink;
-  border-radius: 10px;
-  border: 2px solid purple;
-  color: purple;
-  padding: 0.5em 1em; /* Ajusta el padding para hacer los botones más pequeños */
-  margin-right: 40px;
-  cursor: pointer;
-  display: inline-block; /* Alinea los botones en línea */
-  font-size: 14px; /* Ajusta el tamaño del texto */
+    border-radius: 10px;
+    border: 2px solid purple;
+    color: purple;
+    padding: 0.5em 1em; 
+    margin: 0 130px;
+    cursor: pointer;
+    display: inline-block; /* Alinea los botones */
+    font-size: 14px; /* Ajusta el tamaño del texto */
 }
 
+@media (min-width: 320px) and (max-width: 1200px) {
+  .boton {
+      margin: 15px; 
+      padding-left: 7px;
+  }
+      
+}
 
 .boton:hover{
   background-color:purple;

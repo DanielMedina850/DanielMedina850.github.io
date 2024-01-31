@@ -1,3 +1,5 @@
+/*Codigo daniel*/
+
 *{
     margin: 0;
     padding: 0;
@@ -20,8 +22,7 @@
 .col-12 {width: 100%;}
 
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 768px) { /* para telefono */
     [class*="col-"] {
       width: 100%;
     }
@@ -36,42 +37,39 @@ p{
     margin: 20px;
 }
 
-body{
+#contenedor_titulo{ /* titulo */
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin: 20px;
+    border-bottom: 2px solid black;
+}
+
+body{ /*fondo*/
     background-color: #ccccccff;
 }
-li{
+li{ /*listas*/
     list-style: none;
 }
 
-a{
+a{ /*enlaces*/
     text-decoration: none;
     color: white;
     font-size: 1rem;
 }
 
-img{
+img{/*imagenes*/
     width: 100%;
 }
 
-
-#contenedor_concierto{
-    padding-bottom: 40px;
-    padding-top: 40px;
-    background-color: rgb(224, 224, 224); 
-    font-size: x-large;
-    color: #414141; 
-}
-
-#contenedor_concierto{
-    text-align: center;
-    color: black;
-    font-size: 50px;
-}
 
 .button{
 background-color: #5a5a5a;
 float: right;
 border-radius: 5px;
+padding: 20px;
+border: 1px solid red;
 }
 
 .button:hover{
@@ -79,27 +77,19 @@ border-radius: 5px;
 }
 
 #contenedor_concierto_texto{
-position: relative;
 padding: 20px;
-justify-content: left;
 background-color: #ccccccff;
+border: 1px solid red;
+width: 100%;
+display: flex;
 }
 
 #button_concierto{
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 20px;
-    margin-top: 30px;
+    float: right;
 }
 
 #button_reserva{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    padding: 0 30px; 
+ float: right;
 }
 
 
@@ -119,19 +109,19 @@ background-color: #ccccccff;
     justify-content: center;
     align-items: center; 
     height: 100vh;
+    background-color: black;
 }
 
 #contenedor_form{
     width: 100%;
     max-width: 700px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 28px;
+    background-image: linear-gradient(90deg, #020024 0%, #1d1d64 35%, #68bfd4 100%);    padding: 28px;
     margin: 0 28px;
     border-radius: 10px;
 }
 
 .titulo_form{
-   font-size: 26px;
+   font-size: 50px;
    font-weight: 600;
    text-align: center;
    padding-bottom: 6px;
@@ -146,18 +136,14 @@ textarea
   margin: 9px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 3px; 
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-/* #contenedor_datos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
-    width: 100%;
-} */
+form label{
+    color: white;
+}
 
 /*caja de los datos de usuario*/
 /* .datos_user_box{
@@ -189,7 +175,7 @@ input[type=text]{
 
   /*boton de envio*/
   .submit_button input{
-    background-color: #929292;
+    background-image: radial-gradient(circle, #be169d 20%, #6a2863 100%);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -200,8 +186,13 @@ input[type=text]{
   }
   
   .submit_button input:hover{
-    background-color: #b1b1b1;
+    background-image: radial-gradient(circle, #bf39a4 20%, #6e406a 100%);
   }
   
 
+  #col-6{
+    border: 1px solid red;
+  }
+
 /*      contactanos          */
+/*Codigo daniel*/

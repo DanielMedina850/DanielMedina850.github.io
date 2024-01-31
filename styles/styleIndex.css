@@ -33,6 +33,9 @@
     padding: 15px;
   }
 
+p{
+    margin: 20px;
+}
 
 #contenedor_titulo{ /* titulo */
     text-align: center;
@@ -56,7 +59,7 @@ a{ /*enlaces*/
     font-size: 1rem;
 }
 
-img{                  /*imagenes*/
+img{/*imagenes*/
     width: 100%;
 }
 
@@ -182,11 +185,6 @@ input[type=text]{
 /*      contactanos          */
 
 
-
-
-
-
-/*Imagen principal*/
 /*imagen*/
 .primeraParte{
   background-image: url(https://img.freepik.com/vector-gratis/gente-bailando-fondo_1048-7872.jpg);
@@ -228,32 +226,30 @@ h1{
 
 /*BOTONES-TECLEADO-OTRO COLOR*/
 
-.boton {
-  background-color: pink;
-    border-radius: 10px;
-    border: 2px solid purple;
-    color: purple;
-    padding: 0.5em 1em; 
-    margin: 0 130px;
-    cursor: pointer;
-    display: inline-block; /* Alinea los botones */
-    font-size: 14px; /* Ajusta el tamaño del texto */
+.contenedor {   /* para que exista espacio entre los botones*/
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
-  .boton {
-      margin: 15px; 
-      padding-left: 7px;
-  }
-      
+.contenedor .boton {
+  background-color: pink;
+  border-radius: 10px;
+  border: 2px solid purple;
+  color: purple;
+  padding: 0.5em 1em; 
+  cursor: pointer;
+  font-size: 14px; /* Ajusta el tamaño del texto */
 }
+
+
+
 
 .boton:hover{
   background-color:purple;
   color:pink;
 }
 
-/* Cambia el color cuando el botón está marcado */
+/* Cambia el color cuando el botón esta marcado */
 input[type="radio"]:checked + .boton {
   background-color:rgb(255, 81, 238);
   color: blue;
@@ -263,6 +259,31 @@ input[type="radio"]:checked + .boton {
 .oculto {
   display: none;
 }
+
+
+/*para pantallas pequeñas*/
+@media (min-width: 320px) {
+  .contenedor {
+      margin: 0 10%; 
+      display: flex; 
+      flex-wrap: nowrap; 
+      justify-content: space-between; 
+  }
+  
+  .boton {
+      margin: 0; 
+  }
+}
+
+
+/*para pantallas grandes*/
+@media (min-width: 1201px) {
+  .contenedor {
+      width: 80%; 
+      margin: 0 10% 0 auto; 
+  }
+}
+
 
 
 

@@ -4,53 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otros eventos</title>
-    <link rel="stylesheet" href="styles/styleEncabezado_y_Pie.css"/>
-    <link rel="stylesheet" href="styles/styleMasEventos.css"/>
+    <link rel="stylesheet" href="styles/styleEncabezado.css"/>
+    <link rel="stylesheet" href="styles/styleIndex.css"/>
 
 </head>
 <body>
-    <nav> <!-- navigation bar -->
-        <ul>
-            <li><a href="eventos.html" id="link"> MÁS EVENTOS</a></li>
-            <li><a href="index.html" id="logo"><img src="imagen-evento/logo.png"></a></li> </div> <!--tiene que ir el logo-->
-            <li><a href="CreaTuEvento.html" id="link">CREA TU EVENTO</a></li>
-            <li>
-                <div id="buscador">
-                    <button type="submit" id="lupa">
-                        <img class="invert" src="imagen-evento/Icono_Lupa.png">
-                    </button>
+    <header>
+        <div class="encabezado"> 
 
-                </div> 
-            </li>
-        </ul>
-    </nav>
-<br/>
+            <div class="menu container">
+                 
+                <a href="index.html" class="logo">XEVENT</a>
 
-<div id="contenedor_titulo_eventos">
+                <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <img src="Images/Icono_Hamb.png" class="icono_menu"/>
+                </label>
+
+            <nav class="nav_barra">
+                <ul>
+                    <li> <a href="index.html">Inicio</a> </li>
+                    <li> <a href="eventos.html">Más eventos</a> </li>
+                    <li> <a href="CreaEvento.html">Crea tu evento</a> </li>
+                </ul>
+            </nav>
+                
+            </div>
+
+        </div>
+    </header>
+
+<div id="contenedor_titulo">
     <h1>EVENTOS</h1>
 </div>
 
 <div id="eventos_contenedor">
-    <img id="img_DavidSuarez" src="imagen-evento/david-suarez.jpg" alt="david_suarez"/>
+    <img id="img_DavidSuarez" src="Images/david_suarez.jpg" alt="david_suarez"/>
 </div>
-<div id="contenedor_buttons">
-    <div id="contenedor_button">
-    <a class="button" id="button_Monologo" href="">Monologo</a>
-    </div>
 
-    <div id="contenedor_button">
-    <a class="button" id="button_ReservaYa" href="">Reserva ya</a>
+<div id="contenedor_buttons_texto">
+
+    <div id="contenedor_button_concierto">
+        <a class="button" id="button_concierto" href="https://www.tomaticket.es/es-es/artista/bad-bunny">
+            Monologo
+        </a>
+    </div>
+        <div id="contenedor_concierto_texto">
+            <div><b>HUMOR BLANCO</b> David Suarez</div>
+            <div>Viernes 20 enero 20:00</div>
+            <div>Entradas 20.00€</div>
+        </div>
+    
+    <div id="contenedor_button_reservas">
+        <a class="button" id="button_reserva" href="reserva.html">
+            RESERVA YA
+        </a>
     </div>
 </div>
 
 <div id="contenedor_texto">
-    <div><b>HUMOR BLANCO</b> David Suarez</div>
-    <div>Viernes 20 enero 20:00</div>
-    <div>Entradas 20.00€</div>
+    
 </div>
 
 <div id="eventos_contenedor">
-    <img id="img_Rosalia" src="imagen-evento/62e235db01350.jpeg" alt="david_suarez"/>
+    <img id="img_Rosalia" src="Images/rosalia.jpg" alt="david_suarez"/>
 </div>
 
 <div id="contenedor_button">

@@ -227,24 +227,25 @@ input[type=text]{
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
+    position: relative;
+
   
 }
 
 /*mensaje crear evento*/
 #mensaje {
-  position: absolute;
-  background-color:whitesmoke;
+  background-color:gainsboro;
   color: black;
   font-size: 20px;
-  border-style: solid ;
-  left:50%;
-  top:90%;
- 
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
 
-  
- 
-  
 }
+
+
+
 /*Titulo:completa tu reserva*/
 h1{
   text-align: center;

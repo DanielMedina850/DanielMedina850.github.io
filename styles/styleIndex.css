@@ -238,6 +238,7 @@ input[type=text]{
   position: absolute;
   right: 0px;
   bottom: 10px;
+  opacity: 60%;
 
 }
 
@@ -261,7 +262,6 @@ h1{
 .contenedor {   /* para que exista espacio entre los botones*/
   display: flex;
   justify-content: space-between;
-  
 }
 
 .contenedor .boton {
@@ -315,20 +315,12 @@ input[type="radio"]:checked + .boton {
   }
 }
 
-/* Tabla*/
-.segundaParte {
-    margin-left: 25px;
-    margin-right: 25px; 
-    margin-top: 20px;
-    
-}
 
 table {
   width: 80%; 
   margin: 0 auto; 
   border: 1px solid black;
   text-align: center;
- 
 }
 
 th, td {
@@ -336,6 +328,11 @@ th, td {
   text-align: center;
 }
 
+
+/*calendario*/
+.calendario{
+  width: 70%;
+}
 
 
 

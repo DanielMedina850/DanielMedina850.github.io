@@ -21,12 +21,12 @@ ul {
   
   /* Estilos para la imagen de fondo */
   .primeraParte {
-    background-image: url(https://img.freepik.com/vector-gratis/gente-bailando-fondo_1048-7872.jpg);
-    background-position: center;
+    background-image: url(../imagen-evento/gente_bailando.png);
+    background-position: center; /* para que la imagen salga lo mas centrada posible*/
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    height: 500px;
+    height: 800px;
     padding: 10px;
     position: relative;
     z-index: 1; /* Asegura que la imagen esté detrás de la lista */

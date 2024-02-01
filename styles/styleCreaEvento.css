@@ -21,16 +21,15 @@ ul {
   
   /* Estilos para la imagen de fondo */
   .primeraParte {
-    background-image: url(../imagen-evento/gente_bailando.png);
+    background-image: url(../Images/gente_bailando.png);
     background-position: center; /* para que la imagen salga lo mas centrada posible*/
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    height: 800px;
-    padding: 10px;
+    
     position: relative;
-    z-index: 1; /* Asegura que la imagen esté detrás de la lista */
-    width: 100%;
+    z-index: 1;  /*Asegura que la imagen esté detrás de la lista */
+  
   }
   
   

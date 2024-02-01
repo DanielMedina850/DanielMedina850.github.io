@@ -72,8 +72,6 @@ padding: 20px;
 }
 
 #contenedor_button{
-display: flex;
-float: right;
 margin: 20px;
 }
 
@@ -92,24 +90,23 @@ flex-direction: column;
 width: 50%;
 }
 
-#contenedor_buttons{
-  width: 50%;
-  display: flex;
-  float: right;
-  flex-direction: column-reverse;
+#contenedor_titulo_categoria{
+float: left;
 }
 
 #button_concierto{ /*boton de concierto*/
 width: 150px;
 text-align: center;
+flex-direction: column-reverse;
+float: right;
 }
 
 #button_reserva{
     width: 200px;
-    text-align: center;
     padding: 10px;
     border-radius: 5px;
-
+    text-align: center;
+    padding: 10px;
  /*boton de reserva*/
 }
 

@@ -4,6 +4,7 @@ html, body{
     padding: 0;
 }
 
+
 /* Estilos para la barra de navegación */
 ul {
     list-style-type: none;
@@ -29,6 +30,7 @@ ul {
     padding: 10px;
     position: relative;
     z-index: 1; /* Asegura que la imagen esté detrás de la lista */
+    width: 100%;
   }
   
   

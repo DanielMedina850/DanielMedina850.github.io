@@ -72,8 +72,8 @@ padding: 20px;
 }
 
 #contenedor_button{
-float: left;
-padding: 10px;
+display: flex;
+float: right;
 margin: 20px;
 }
 
@@ -87,7 +87,16 @@ background-color: #ccccccff;
 width: 100%;
 display: block;
 line-height: 1.8;
-float: left;
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+#contenedor_buttons{
+  width: 50%;
+  display: flex;
+  float: right;
+  flex-direction: column-reverse;
 }
 
 #button_concierto{ /*boton de concierto*/
@@ -98,6 +107,8 @@ text-align: center;
 #button_reserva{
     width: 200px;
     text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 
  /*boton de reserva*/
 }

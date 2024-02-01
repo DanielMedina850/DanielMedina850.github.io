@@ -47,19 +47,63 @@
 
     <div class="segundaParte">
         <form action="index.html">
-            <div id="seleccionar">
-                <select name="queSala" id="sala" required>
-                    <option value="" disabled selected >Selecciona una sala...</option>
-                    <option value="sala1">Sala 1</option>
-                    <option value="sala2">Sala 2</option>
-                </select>
-    
-                <select name="queHora" id="hora" required>
-                    <option value="" disabled selected >Selecciona una hora...</option>
-                    <option value="hora1">10:00</option>
-                    <option value="hora2">12:00</option>
-                </select>
-            </div>
+            <table>
+                <tr>
+                    <th colspan="2">Sala</th>
+                    <th>Aforo</th>
+                    <th>Hora</th>
+                    <th>Tiempo máximo</th>
+                    <th>Dias</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Con terraza</td>
+                    <td>16:00</td>
+                    <td>900</td>
+                    <td>5 horas</td>
+                    <td>Sabado</td>
+                    <td>1500€</td>
+                </tr>
+                <tr>
+                    <td>Sin terraza</td>
+                    <td>22:00</td>
+                    <td>850</td>
+                    <td>4 horas</td>
+                    <td>Sabado</td>
+                    <td>1000€</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2</td>
+                    <td>21:00</td>
+                    <td>530</td>
+                    <td>4 horas</td>
+                    <td>Sabado y Domingo</td>
+                    <td>450€</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">3</td>
+                    <td>20:00</td>
+                    <td>200</td>
+                    <td>4 horas</td>
+                    <td>Domingo</td>
+                    <td>200€</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">4</td>
+                    <td>18:00</td>
+                    <td>200</td>
+                    <td>6 horas</td>
+                    <td>Viernes</td>
+                    <td>200€</td>
+                </tr>
+
+
+                
+            </table>
+            
             <div class="contenedor">
                 <input type="radio" id="boton1" name="grupo" class="oculto" >
                 <label for="boton1" class="boton">Obra de teatro</label>

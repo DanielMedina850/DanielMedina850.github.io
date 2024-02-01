@@ -1,5 +1,4 @@
 /*INDEX CSS*/
-
 *{
     margin: 0;
     padding: 0;
@@ -218,8 +217,6 @@ input[type=text]{
 
 
 /* CREAR EVENTO CSS*/
-
-
 /*imagen+ responsive*/
 .primeraParte {
     background-image: url(../Images/gente.jpg);
@@ -273,7 +270,7 @@ h1{
   color: purple;
   padding: 0.5em 1em; 
   cursor: pointer;
-  font-size: 14px; /* Ajusta el tamaño del texto */
+  font-size: 14px;
 }
 
 
@@ -316,6 +313,19 @@ input[type="radio"]:checked + .boton {
       margin: 0 10% 0 auto; 
   }
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
 
 
 

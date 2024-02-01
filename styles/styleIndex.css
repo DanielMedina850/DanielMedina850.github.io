@@ -48,6 +48,7 @@ p{
 
 body{ /*fondo*/
     background-color: #ccccccff;
+  
 }
 li{ /*listas*/
     list-style: none;
@@ -203,15 +204,14 @@ input[type=text]{
 
 /*imagen+ responsive*/
 .primeraParte {
-  background-image: url(https://img.freepik.com/vector-gratis/gente-bailando-fondo_1048-7872.jpg);
-    background-position: center;
+    background-image: url(../imagen-evento/gente_bailando.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    height: 500px;
-    padding: 10px;
-    position: relative;
-    z-index: 1; /* imagen detras de la lista */
+    background-size: cover;
+    height: 600px;
+    width: 1900px;
+    
+    /* z-index: 1;  imagen detras de la lista */
 }
 
 
@@ -300,6 +300,8 @@ input[type="radio"]:checked + .boton {
       margin: 0 10% 0 auto; 
   }
 }
+
+
 
 
 

@@ -96,7 +96,7 @@ width: 50%;
   width: 50%;
   display: flex;
   float: right;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 
 #button_concierto{ /*boton de concierto*/

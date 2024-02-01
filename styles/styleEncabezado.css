@@ -6,13 +6,11 @@
     list-style: none; /*para quitar los puntos de la lista*/
 }
 
-body{
-background-color: #04268C; /*BORRAR*/
-}
+
 
 
 .menu {
-    max-width: 1100px;
+    max-width: 1000px;
     margin:0 auto;
 }
 
@@ -34,10 +32,10 @@ background-color: #04268C; /*BORRAR*/
 
 .logo{
     font-family: Moderno;
-    font-size: 24px;
-    color: #fbff10;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-size:30px;
+    color: #fbff10; /*color logo*/
+    font-weight: 1000;
+    
 }
 
 .menu .nav_barra ul li {
@@ -50,10 +48,11 @@ background-color: #04268C; /*BORRAR*/
     padding: 20px;
     color: white;
     display: block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .menu .nav_barra ul li a:hover { /*cuadno pasas el raton por encima*/
-    color:aquamarine;
+    color:#fbff10;
 }
 
 #menu{ /*para quitar la caja del checkbox*/
@@ -61,7 +60,7 @@ background-color: #04268C; /*BORRAR*/
 }
 
 .icono_menu{
-    width: 25px;
+    width: 40px;
 }
 
 .menu label{
@@ -69,8 +68,15 @@ background-color: #04268C; /*BORRAR*/
     display: none;
 }
 
+
+
 @media (max-width:991px){ /*versión movil*/
     /*cuando la resolucion baje a 991 px se cambie*/
+
+
+    .logo{
+       font-size: 40px;
+    }
 
     .menu{
         padding: 30px;
@@ -81,7 +87,7 @@ background-color: #04268C; /*BORRAR*/
     }
 
     .encabezado{
-        padding: 46px 0;
+        padding: 50px 0;
     }
 
     .menu .nav_barra{
@@ -89,16 +95,25 @@ background-color: #04268C; /*BORRAR*/
         top: 100%;
         left: 0;
         right: 0;
-        background-color: red;
+        background-color: #405080;
         display: none;
+        
     }
+    li a:hover {
+        background-color: #04268C;
+        
+      }
+    
 
     .menu .nav_barra ul li{
         width: 100%; /*para forma de columan*/
+        text-align: center;
     }
 
     #menu:checked ~ .nav_barra{
         display: initial;
     }
+
+    
 
 }

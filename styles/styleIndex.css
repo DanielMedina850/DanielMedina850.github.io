@@ -90,8 +90,11 @@ flex-direction: column;
 width: 50%;
 }
 
-#contenedor_titulo_categoria{
-float: left;
+#contenedor_buttons{
+  width: 50%;
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
 }
 
 #button_concierto{ /*boton de concierto*/

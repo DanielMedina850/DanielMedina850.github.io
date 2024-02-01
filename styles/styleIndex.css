@@ -261,6 +261,7 @@ h1{
 .contenedor {   /* para que exista espacio entre los botones*/
   display: flex;
   justify-content: space-between;
+  
 }
 
 .contenedor .boton {
@@ -314,15 +315,24 @@ input[type="radio"]:checked + .boton {
   }
 }
 
+/* Tabla*/
+.segundaParte {
+    margin-left: 25px;
+    margin-right: 25px; 
+    margin-top: 20px;
+    
+}
+
 table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
+  width: 80%; 
+  margin: 0 auto; 
+  border: 1px solid black;
+  text-align: center;
+ 
 }
 
 th, td {
   border: 1px solid black;
-  padding: 8px;
   text-align: center;
 }
 

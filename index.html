@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styleIndex.css"/>
+    <link rel="stylesheet" href="styles/styleEncabezado.css"/>
     <title>XEVENTS</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <ul class="lista">
-                <a href="index.html">
-                    <li>INICIO</li>
-                </a>
-                <a href="eventos.html">
-                    <li>EVENTOS</li>
-                </a>
-                <a href="CreaTuEvento.html">
-                    <li>CREAR EVENTO</li>
-                </a>
-            </ul>
-            
+    <header>
+        <div class="encabezado"> 
+
+            <div class="menu container">
+                 
+                <a href="index.html" class="logo">XEVENT</a>
+
+                <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <img src="Images/Icono_Hamb.png" class="icono_menu"/>
+                </label>
+
+            <nav class="nav_barra">
+                <ul>
+                    <li> <a href="index.html">Inicio</a> </li>
+                    <li> <a href="eventos.html">Más eventos</a> </li>
+                    <li> <a href="CreaEvento.html">Crea tu evento</a> </li>
+                </ul>
+            </nav>
+                
+            </div>
+
         </div>
-    </div>
+    </header>
 
 
     <div id="contenedor_titulo">

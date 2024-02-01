@@ -1,4 +1,4 @@
-/*Codigo daniel*/
+/*INDEX CSS*/
 
 *{
     margin: 0;
@@ -48,6 +48,7 @@ p{
 
 body{ /*fondo*/
     background-color: #ccccccff;
+  
 }
 li{ /*listas*/
     list-style: none;
@@ -71,8 +72,10 @@ background-color: #5a5a5a;
 padding: 20px;
 }
 
-#contenedor_button{
+#contenedor_button_concierto{
 margin: 20px;
+height: 10px;
+
 }
 
 .button:hover{ /*hover de los botones*/
@@ -81,44 +84,37 @@ margin: 20px;
 
 #contenedor_concierto_texto{ /* contenedor del texto de la funcion*/
 padding: 20px;
-background-color: #ccccccff;
-width: 100%;
 display: block;
 line-height: 1.8;
-display: flex;
-flex-direction: column;
 width: 50%;
+margin: 20px;
+font-size: 30px;
+display: block;
 }
 
-#contenedor_button_texto{
-  display: grid;
-  grid-template-rows: auto auto;
+#contenedor_buttons_texto{
+  position: relative;
 }
+
+
 
 #button_concierto{
-  grid-row: 1;
-}
-
-#contenedor_buttons{
-  width: 50%;
-  display: flex;
-  float: right;
-  flex-direction: row-reverse;
-}
-
-#button_concierto{ /*boton de concierto*/
-width: 150px;
-text-align: center;
-flex-direction: column-reverse;
-float: right;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  border-radius: 40px;
 }
 
 #button_reserva{
+    position: absolute;
     width: 200px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 40px;
     text-align: center;
     padding: 10px;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
  /*boton de reserva*/
 }
 
@@ -150,7 +146,7 @@ float: right;
 #contenedor_form{/*contenedor de form*/
     width: 100%;
     max-width: 700px;
-    background-image: linear-gradient(90deg, #020024 0%, #1d1d64 35%, #68bfd4 100%);    padding: 28px;
+    background-image: linear-gradient(90deg, #031859 0%, #04268c 25%, #d904a0 100%);    padding: 28px;
     margin: 0 28px;
     border-radius: 10px;
 }
@@ -210,17 +206,27 @@ input[type=text]{
 /*      contactanos          */
 
 
+/* INDEX CSS*/
+
+
+/* MAS EVENTOS CSS*/
+
+
+
+
+/* MAS EVENTOS CSS*/
+
+
 /*imagen+ responsive*/
 .primeraParte {
-  background-image: url(https://img.freepik.com/vector-gratis/gente-bailando-fondo_1048-7872.jpg);
-    background-position: center;
+    background-image: url(../imagen-evento/gente_bailando.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    height: 500px;
-    padding: 10px;
-    position: relative;
-    z-index: 1; /* imagen detras de la lista */
+    background-size: cover;
+    height: 600px;
+    width: 1900px;
+    
+    /* z-index: 1;  imagen detras de la lista */
 }
 
 
@@ -244,7 +250,7 @@ h1{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   padding-top: 40px;
  
   
@@ -309,6 +315,8 @@ input[type="radio"]:checked + .boton {
       margin: 0 10% 0 auto; 
   }
 }
+
+
 
 
 

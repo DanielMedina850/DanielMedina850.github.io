@@ -224,9 +224,6 @@ input[type=text]{
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    
-
-  
 }
 
 /*mensaje crear evento*/
@@ -237,7 +234,7 @@ input[type=text]{
   display: flex;
   position: absolute;
   right: 0px;
-  bottom: 10px;
+  bottom: 95px;
   opacity: 60%;
 
 }

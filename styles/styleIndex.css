@@ -1,4 +1,5 @@
 /*INDEX CSS*/
+
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +24,10 @@
 
 @media only screen and (max-width: 768px) { /* para telefono */
     [class*="col-"] {
+      width: 100%;
+    }
+
+    img{
       width: 100%;
     }
   }
@@ -59,10 +64,10 @@ a{ /*enlaces*/
     font-size: 1rem;
 }
 
-img{/*imagenes*/
-  max-height: 700px;
-  height: 70%;
+.imagen_evento{
   width: 100%;
+  height: 600px;
+  object-fit: scale-down;
 }
 
 
@@ -70,6 +75,8 @@ img{/*imagenes*/
 background-color: #5a5a5a;
 padding: 20px;
 }
+
+
 
 #contenedor_button_concierto{
 margin: 20px;
@@ -100,6 +107,7 @@ display: block;
 #button_concierto{
   position: absolute;
   top: 0;
+  left: 40px;
   padding: 10px;
   border-radius: 40px;
 }
@@ -212,29 +220,25 @@ input[type=text]{
 
 
 
-
 /* MAS EVENTOS CSS*/
 
 
-/* CREAR EVENTO CSS*/
 /*imagen+ responsive*/
 .primeraParte {
-    background-image: url(../Images/gente.jpg);
+    background-image: url(../imagen-evento/gente_bailando.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
 }
 
+
+
 /*mensaje crear evento*/
 #mensaje {
-  background-color:gainsboro;
-  color: black;
-  font-size: 20px;
-  display: flex;
   position: absolute;
   right: 0px;
-  bottom: 95px;
+  bottom: 10px;
   opacity: 60%;
 
 }
@@ -261,8 +265,6 @@ input[type=text]{
   padding: 0.5em 1em; 
   cursor: pointer;
   font-size: 14px;
- 
-  
 }
 
 
@@ -300,8 +302,6 @@ input[type="radio"]:checked + .boton {
 }*/
 
 
-/*----------------------------Tabla----------------------------------------------*/
-
 table {
   width: 80%; 
   margin: 0 auto; 
@@ -315,45 +315,12 @@ th, td {
 }
 
 
-/*---------------------------calendario-------------------------------------- */
-/* Estilo para el contenedor principal */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/*calendario*/
+.calendario{
+  width: 70%;
 }
 
 
-.calendario {
-  width: 75vw;
-  max-width: 500px;
-  margin-left: 90px;
-}
-
-#imagen_calendario {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Contenedor de datos */
-.datos {
-  margin-right: 20%;
-}
-
-/*pantallas pequeñas (responsive) */
-@media only screen and (max-width: 768px) {
-  
-  .calendario {
-    margin-left: 0;
-    margin-bottom: 20px; /*espacio entre el calendario y el contenedor de datos */
-  }
-
-  .datos {
-    width: 80%; 
-    margin-left: 90px; 
-  }
-}
 
 
 

@@ -26,6 +26,10 @@
     [class*="col-"] {
       width: 100%;
     }
+
+    img{
+      width: 100%;
+    }
   }
 
   [class*="col-"] {
@@ -60,10 +64,10 @@ a{ /*enlaces*/
     font-size: 1rem;
 }
 
-img{/*imagenes*/
+.imagen_evento{
   width: 100%;
   height: 600px;
-  object-fit: contain;
+  object-fit: scale-down;
 }
 
 
@@ -71,6 +75,8 @@ img{/*imagenes*/
 background-color: #5a5a5a;
 padding: 20px;
 }
+
+
 
 #contenedor_button_concierto{
 margin: 20px;

@@ -41,7 +41,7 @@
             <p>CREA TU EVENTO CON NOSOTROS </p>
         </div>
     </div>
-    <h1>Completa tu reserva </h1>
+    <h1 id="completaR">Completa tu reserva </h1>
     <hr/>
 
 
@@ -51,60 +51,48 @@
                 <tr>
                     <th colspan="2">Sala</th>
                     <th>Aforo</th>
-                    <th>Hora</th>
                     <th>Tiempo máximo</th>
-                    <th>Dias</th>
                     <th>Precio</th>
                 </tr>
                 <tr>
                     <td rowspan="2">1</td>
                     <td>Con terraza</td>
-                    <td>16:00</td>
                     <td>900</td>
                     <td>5 horas</td>
-                    <td>Sabado</td>
                     <td>1500€</td>
                 </tr>
                 <tr>
                     <td>Sin terraza</td>
-                    <td>22:00</td>
                     <td>850</td>
                     <td>4 horas</td>
-                    <td>Sabado</td>
                     <td>1000€</td>
                 </tr>
                 <tr>
                     <td colspan="2">2</td>
-                    <td>21:00</td>
                     <td>530</td>
                     <td>4 horas</td>
-                    <td>Sabado y Domingo</td>
                     <td>450€</td>
                 </tr>
 
                 <tr>
                     <td colspan="2">3</td>
-                    <td>20:00</td>
                     <td>200</td>
                     <td>4 horas</td>
-                    <td>Domingo</td>
                     <td>200€</td>
                 </tr>
 
                 <tr>
                     <td colspan="2">4</td>
-                    <td>18:00</td>
                     <td>200</td>
                     <td>6 horas</td>
-                    <td>Viernes</td>
                     <td>200€</td>
                 </tr>
                 
-
-  
             </table>
-            
+
+            <h2 id="eventoEs">Tu evento es..</h2>
             <div class="contenedor">
+
                 <input type="radio" id="boton1" name="grupo" class="oculto" >
                 <label for="boton1" class="boton">Obra de teatro</label>
             
@@ -117,27 +105,27 @@
                 <input type="radio" id="boton4" name="grupo" class="oculto">
                 <label for="boton4" class="boton">Monólogo</label>
               </div>
-    <br/>
-    <br/>
-    <br/>
-        <h2>Selecciona el dia</h2>
+   
+        <h2 id="texto_seleccionaDia">Selecciona el dia</h2>
         <!-- calendario -->
-        <div class="calendario">
-            <img src="Images/calendario.png">
+        <div class="container">
+            <div class="calendario">
+              <img src="Images/calendario.png" id="imagen_calendario">
             </div>
-    
-        <!-- nombre y nombre evento -->
-         <div class ="datos" >
-            <label for="nombre"></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
-    
-            <label for="nomEvento"></label>
-            <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
-    
-        <!-- reservar -->
-          <button type="submit">Reservar</button>
-        </div>
-    </div>
+          
+            <!--rellenar datos -->
+            <div class="datos">
+              <label for="nombre"></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
+          
+              <label for="nomEvento"></label>
+              <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
+          
+              <!-- boton reservar -->
+              <button type="submit">Reservar</button>
+            </div>
+          </div>
+          
 
 
 

@@ -245,24 +245,16 @@ input[type=text]{
 
 
 /*Titulo:completa tu reserva*/
-h1{
+#completaR{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
-  /* background-color: blueviolet; */
   padding-top: 40px;
  
   
 }
 
-
-
-/*BOTONES-TECLEADO-OTRO COLOR*/
-
-.contenedor {   /* para que exista espacio entre los botones*/
-  display: flex;
-  justify-content: space-between;
-}
+/*-------------------BOTONES-TECLEADO-OTRO COLOR*-----------------------*/
 
 .contenedor .boton {
   background-color: pink;
@@ -272,6 +264,8 @@ h1{
   padding: 0.5em 1em; 
   cursor: pointer;
   font-size: 14px;
+ 
+  
 }
 
 
@@ -295,26 +289,21 @@ input[type="radio"]:checked + .boton {
 /*para pantallas pequeñas*/
 @media (min-width: 320px) {
   .contenedor {
-      margin: 0 10%; 
-      display: flex; 
-      flex-wrap: nowrap; 
-      justify-content: space-between; 
-  }
-  
-  .boton {
-      margin: 0; 
+      margin: 0 20px; 
+      display: flex;    
   }
 }
 
 
-/*para pantallas grandes*/
-@media (min-width: 1201px) {
-  .contenedor {
-      width: 80%; 
-      margin: 0 10% 0 auto; 
-  }
-}
+/*para pantallas grandes
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}*/
 
+
+/*----------------------------Tabla----------------------------------------------*/
 
 table {
   width: 80%; 
@@ -329,12 +318,48 @@ th, td {
 }
 
 
-/*calendario*/
-.calendario{
-  width: 70%;
+/*---------------------------calendario-------------------------------------- */
+/* Estilo para el contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
+.calendario {
+  width: 75vw;
+  max-width: 500px;
+  margin-left: 90px;
+}
+
+#imagen_calendario {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contenedor de datos */
+.datos {
+  margin-right: 20%;
+}
+
+/*pantallas pequeñas (responsive) */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* dirección de columna */
+  }
+
+  .calendario {
+    margin-left: 0;
+    margin-bottom: 20px; /*espacio entre el calendario y el contenedor de datos */
+  }
+
+  .datos {
+    width: 80%; 
+    margin-left: 90px; 
+  }
+}
 
 
 

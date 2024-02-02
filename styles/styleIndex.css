@@ -346,10 +346,7 @@ th, td {
 
 /*pantallas pequeñas (responsive) */
 @media only screen and (max-width: 768px) {
-  .container {
-    flex-direction: column; /* dirección de columna */
-  }
-
+  
   .calendario {
     margin-left: 0;
     margin-bottom: 20px; /*espacio entre el calendario y el contenedor de datos */

@@ -246,24 +246,16 @@ input[type=text]{
   
 }
 /*Titulo:completa tu reserva*/
-h1{
+#completaR{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
-  /* background-color: blueviolet; */
   padding-top: 40px;
  
   
 }
 
-
-
-/*BOTONES-TECLEADO-OTRO COLOR*/
-
-.contenedor {   /* para que exista espacio entre los botones*/
-  display: flex;
-  justify-content: space-between;
-}
+/*-------------------BOTONES-TECLEADO-OTRO COLOR*-----------------------*/
 
 .contenedor .boton {
   background-color: pink;
@@ -272,7 +264,7 @@ h1{
   color: purple;
   padding: 0.5em 1em; 
   cursor: pointer;
-  font-size: 14px; /* Ajusta el tamaño del texto */
+  font-size: 14px;
 }
 
 
@@ -296,24 +288,36 @@ input[type="radio"]:checked + .boton {
 /*para pantallas pequeñas*/
 @media (min-width: 320px) {
   .contenedor {
-      margin: 0 10%; 
-      display: flex; 
-      flex-wrap: nowrap; 
-      justify-content: space-between; 
-  }
-  
-  .boton {
-      margin: 0; 
+      margin: 0 20px; 
+      display: flex;    
   }
 }
 
 
-/*para pantallas grandes*/
-@media (min-width: 1201px) {
-  .contenedor {
-      width: 80%; 
-      margin: 0 10% 0 auto; 
-  }
+/*para pantallas grandes
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}*/
+
+
+table {
+  width: 80%; 
+  margin: 0 auto; 
+  border: 1px solid black;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+/*calendario*/
+.calendario{
+  width: 70%;
 }
 
 

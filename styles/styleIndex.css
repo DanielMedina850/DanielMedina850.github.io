@@ -11,9 +11,6 @@ body, html {
 }
 
 
-
-
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -56,10 +53,7 @@ p{
     border-bottom: 2px solid black;
 }
 
-body{ /*fondo*/
-    background-color:gainsboro;
-  
-}
+
 li{ /*listas*/
     list-style: none;
 }
@@ -108,12 +102,6 @@ display: block;
 #contenedor_buttons_texto{
   position: relative;
 }
-
-#completaR{
-  background-color: white;
-}
-
-
 
 #button_concierto{
   position: absolute;
@@ -233,20 +221,29 @@ input[type=text]{
 
 /* MAS EVENTOS CSS*/
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------CREAR EVENTO---------------------------*/
 /*imagen+ responsive*/
 .primeraParte {
     background-image: url(../Images/gente.jpg);
-    background-color: white;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
 }
 
-.segundaParte{
-  background-color: whitesmoke;
-}
+
 
 
 /*mensaje crear evento*/
@@ -255,7 +252,7 @@ input[type=text]{
   right: 0;
   bottom: 60%;
   opacity: 60%;
-  background-color:white;
+
 }
 
 
@@ -265,7 +262,6 @@ input[type=text]{
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
   padding-top: 40px;
- background-color: whitesmoke;
   
 }
 
@@ -309,12 +305,11 @@ input[type="radio"]:checked + .boton {
   display: none;
 }
 
-
+/* -----tabla----*/
 table {
   width: 60%;
   margin: 10px auto; 
   border-collapse: collapse; 
-  background-color: white;
 }
 
 th, td {
@@ -326,9 +321,6 @@ th {
   background-color: #f2f2f2; 
 }
 
-#completaR{
-  background-color: white;
-}
 
 
 
@@ -338,10 +330,6 @@ th {
   display: flex;
   flex-wrap: wrap;
 }
-
-
-
-
 
 .calendario {
   text-align: left; 
@@ -367,8 +355,6 @@ th {
 .eventoEs {
   margin-top: -100px; 
 }
-
-
 
 
 
@@ -441,4 +427,16 @@ th {
     margin-top: 0; 
 }
 
+}
+
+
+/* ---------------------RESERVAR---------------------------------*/
+
+#formularioReserva{
+ 
+  
+}
+
+.reservaTitulo{
+  
 }

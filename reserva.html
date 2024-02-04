@@ -3,10 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RESERVA</title>
+    <link rel="stylesheet" href="styles/styleIndex.css" />
+    <link rel="stylesheet" href="styles/styleEncabezado.css" />
 </head>
 <body>
+    <div class="encabezado"> 
+
+        <div class="menu">
+             
+            <a href="index.html" class="logo">XEVENT</a>
+
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Images/Icono_Hamb.png" class="icono_menu"/>
+            </label>
+
+        <nav class="nav_barra">
+            <ul>
+                <li> <a href="index.html">INICIO</a> </li>
+                
+                <li> <a href="eventos.html">MÁS EVENTOS</a> </li>
+                
+                <li> <a href="CreaEvento.html">CREA TU EVENTO</a> </li>
+            </ul>
+        </nav>
+            
+        </div>
+
+    </div>
+
+        
+        <footer> <!--  El pie de pagina  -->
+         
+            <div id="telefono">
+
+                <p id="textoFooter">TEL: 123 123 123</p>
+
+            </div>
+
+        
+            <div id="redes">
+
+                <ul>
+                    <li id="textoFooter">SÍGUENOS EN: </li>
+                   <!-- <li> <img src="Images/Icono_Fb.png" alt="Icono_Fb"></li>
+
+                    <li><img src="Images/Icono_Pipe.png" alt="Icono_pipe"></li>
+
+                    <li> <img src="Images/Icono_Ig.png" alt="Icono_Ig"></li>
+
+                    <li><img src="Images/Icono_Pipe.png" alt="Icono_pipe"></li>
+                
+                    <li> <img src="Images/Icono_X.png" alt="Icono_X"></li> -->
+
+                    
+                </ul>
+            </div>
+
+        </footer>
+
+    <h1 class="titulo_form">
+        RESERVA
+    </h1>
+    <div id="content_main">
+        
+            <form action="index.html">
+
+                <div id="reserva_form">
+
+                    <div class="box1">
+                        <label for="nombre">NOMBRE*</label>
+                        <input type="text" id="nombre" name="nombre"  required="required" placeholder="Escriba aquí su nombre:">
+                    </div>
+                    <div class="box2">
+                        <label for="apellido">APELLIDOS*</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Escriba aquí sus apellidos:">
+                    </div>
+                    <div class="box3">
+                        <label for="email">EMAIL*</label>
+                        <input type="text" id="email" name="email" required="required"  placeholder="Escriba aquí su email:">
+                    </div>
+                    <div class="box4">
+                        <label for="repEmail">REPITE EL EMAIL:*</label>
+                        <input type="text" id="repEmail" name="repEmail" required="required"  placeholder="Repita el email:">
+                    </div>
+
+                    <div class="box5">
+                        <label for="dni">DNI/NIE*</label>
+                        <input type="text" id="dni" name="dni" required="required"  placeholder="Escriba aquí su DNI/NIE:">
+                    </div>
+                    <div class="box6">
+                        <label for="codPos">CÓDIGO POSTAL</label>
+                        <input type="text" id="codPos" name="codPos"  placeholder="Escriba aquí su código postal">
+                    </div>
+
+                    <div class="box7">
+                        <label for="numTar">NUM. TARJETA*</label>
+                        <input type="text" id="numTar" name="numTar" required="required"  placeholder="Escriba aquí el número de su tarjeta:">
+                    </div>
+                    
+                    <div class="box8">
+                        <label for="numSec">NUM. SECRETO*</label>
+                        <input type="text" id="numSec" name="numSec" required="required" placeholder="Escriba el número secreto de la tarjeta.">
+                    </div>
+
+                    <div class="box9">
+                        <input type="checkbox" id="checkbox" name="terminos" required="required">
+                        <label for="checkbox">He leido y acepto los términos y condiciones*</label>
+                    </div>
+                    <div class="box10">
+                        <input type="checkbox" id="checkbox" name="masInfo">
+                        <label for="checkbox">Quiero recibir información de próximos eventos</label>
+                    </div>
+
+                    <div class="box11">
+
+
+                       <div id="box11_1"> <img src="Images/Icono_Ticket.png" alt="Icono_Ticket"></div>
+
+                        <div id="box11_2"> <p >TOTAL: 25.00€</p></div>
+
+                        <div class="submit_button" id="box11_3">
+                            <input type="submit" value="Reservar"/></div>
     
+                    </div>
+                    
+                </div>
+            </form>
+    
+    </div>
 </body>
 </html>
-

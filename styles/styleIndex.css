@@ -396,6 +396,12 @@ th {
 
 
 
+.pack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .parteIzquierda,
 .container_derecha {
   display: flex;
@@ -403,7 +409,6 @@ th {
   align-items: center;
   justify-content: center;
 }
-
 
 .datos {
   display: flex;
@@ -490,7 +495,12 @@ th {
     margin-top: 70px;
 
   }
+  .pack {
+    grid-template-columns: 1fr;
+  }
 
 }
+
+
 
 

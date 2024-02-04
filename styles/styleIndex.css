@@ -1,25 +1,65 @@
 /*INDEX CSS*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  background-color: whitesmoke;
 }
 
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
 
 
 @media only screen and (max-width: 1024px) { /* para tablet */
@@ -66,74 +106,81 @@
   }
   
 
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-
-p{
-    margin: 20px;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
 
-#contenedor_titulo{ /* titulo */
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    padding-bottom: 20px;
-    margin: 20px;
-    border-bottom: 2px solid black;
+p {
+  margin: 20px;
+}
+
+#contenedor_titulo {
+  /* titulo */
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin: 20px;
+  border-bottom: 2px solid black;
 }
 
 body{ /*fondo*/
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-color: #ccccccff;
   
 }
 li{ /*listas*/
     list-style: none;
 }
 
-a{ /*enlaces*/
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
+a {
+  /*enlaces*/
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
 }
 
 .imagen_evento{
-  width: 100%;
-  object-fit: cover;
-  filter: brightness(70%);
-  height: 90vh;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.eventos_contenedor{
+  padding-bottom: 30px;
 }
 
 
 
 .button{ /*botones en general*/
 background-color: #5a5a5a;
+padding: 20px;
 }
 
 
 #contenedor_button_concierto{
-height: 50px;
-position: absolute;
-padding: 20px;
+margin: 20px;
+height: 10px;
+
 }
 
-.button:hover{ /*hover de los botones*/
-    background-color: #868686;
+.button:hover {
+  /*hover de los botones*/
+  background-color: #868686;
 }
 
 #contenedor_concierto_texto{ /* contenedor del texto de la funcion*/
-  position: absolute;
-  height: auto;
-  font-size: 1vw;
-  left: 20px;
-  margin-top: 35px;
+padding: 20px;
+display: block;
+line-height: 1.8;
+width: 50%;
+margin: 20px;
+font-size: 30px;
+display: block;
 }
 
 #contenedor_buttons_texto{
-  padding: 30px;
-  min-height: 300px;
-  overflow: hidden;
   position: relative;
   line-height: 1.8;
   width: 100%;
@@ -152,6 +199,7 @@ padding: 20px;
 
 
 #button_concierto{
+  position: absolute;
   top: 0;
   left: 0;
   padding: 10px;
@@ -159,6 +207,7 @@ padding: 20px;
 }
 
 #button_reserva{
+    position: absolute;
     width: 200px;
     padding: 20px;
     border-radius: 40px;
@@ -179,70 +228,73 @@ padding: 20px;
     color: white;
     text-align: center;
     font-weight: bold;
-    padding-top: 70px;
+    padding-top: 50px;
     font-size: 30px;
     float: left;
     width: 100%;
-    margin: 0;
 }
 
-#content_main{ /*contenedor main de form*/
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
-    background-color: black;
-    float: left;
-    width: 100%;
+#content_main {
+  /*contenedor main de form*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  float: left;
+  width: 100%;
 }
 
 #contenedor_form{/*contenedor de form*/
     width: 100%;
     max-width: 700px;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);   
-    padding: 28px;
+    background-image: linear-gradient(90deg, #031859 0%, #04268c 25%, #d904a0 100%);    padding: 28px;
     margin: 0 28px;
     border-radius: 10px;
 }
 
-.titulo_form{ /*texto de formulario*/
-   font-size: 50px;
-   font-weight: 600;
-   text-align: center;
-   padding-bottom: 6px;
-   color: white;
-   border-bottom: 2px solid black;
+.titulo_form {
+  /*texto de formulario*/
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  color: white;
+  border-bottom: 2px solid black;
 }
 
-textarea /*textarea responsive*/
-{
+textarea
+
+/*textarea responsive*/
+  {
   width: 100%;
   padding: 8px 18px;
   margin: 9px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 3px; 
+  border-radius: 3px;
   border-radius: 5px;
   max-width: 100%;
 }
 
-form label{ /* textos blancos*/
-    color: white;
+form label {
+  /* textos blancos*/
+  color: white;
 }
 
 /*caja de los datos de usuario*/
 
-input[type=text]{
-    border-radius: 5px;
-    border-color: white;
-    height: 25px;
-    outline: none;
-    width: 100%;
-} 
+input[type=text] {
+  border-radius: 5px;
+  border-color: white;
+  height: 25px;
+  outline: none;
+  width: 100%;
+}
 
   /*boton de envio*/
   .submit_button input{
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: radial-gradient(circle, #be169d 20%, #6a2863 100%);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -254,7 +306,7 @@ input[type=text]{
   }
   /*hover del submit*/
   .submit_button input:hover{
-    background-image: linear-gradient(to right top, #d36da7, #ca79bb, #be78d1, #a486d9, #7878e0, #799bec, #69aaf4, #56b6f7, #3cc9fc, #41dfff, #00eeff, #2cfcee);
+    background-image: radial-gradient(circle, #bf39a4 20%, #6e406a 100%);
   }
 
 /*      contactanos          */
@@ -270,37 +322,60 @@ input[type=text]{
 /* MAS EVENTOS CSS*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------CREAR EVENTO---------------------------*/
 /*imagen+ responsive*/
 .primeraParte {
-    background-image: url(../imagen-evento/gente_bailando.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
+  background-image: url(../Images/gente.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
 }
+
 
 
 
 /*mensaje crear evento*/
 #mensaje {
   position: absolute;
-  right: 0px;
-  bottom: 10px;
-  opacity: 60%;
-
+  right: 0;
+  bottom: 65%;
+  background-color: #5a5a5a;
+  opacity: 70%;
 }
+
 
 
 
 /*Titulo:completa tu reserva*/
-#completaR{
+#completaR {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
   padding-top: 40px;
- 
-  
+
 }
+
+.eventoEs {
+  margin-bottom: 20px;
+}
+
+#texto_seleccionaDia {
+  color: black;
+  font-size: 25px;
+}
+
 
 /*-------------------BOTONES-TECLEADO-OTRO COLOR*-----------------------*/
 
@@ -309,20 +384,20 @@ input[type=text]{
   border-radius: 10px;
   border: 2px solid purple;
   color: purple;
-  padding: 0.5em 1em; 
+  padding: 0.5em 1em;
   cursor: pointer;
   font-size: 14px;
 }
 
 
-.boton:hover{
-  background-color:purple;
-  color:pink;
+.boton:hover {
+  background-color: purple;
+  color: pink;
 }
 
 /* Cambia el color cuando el botón esta marcado */
-input[type="radio"]:checked + .boton {
-  background-color:rgb(255, 81, 238);
+input[type="radio"]:checked+.boton {
+  background-color: rgb(255, 81, 238);
   color: blue;
   border-inline: rgb(255, 81, 238);
 }
@@ -331,44 +406,137 @@ input[type="radio"]:checked + .boton {
   display: none;
 }
 
-
-/*para pantallas pequeñas*/
-@media (min-width: 320px) {
-  .contenedor {
-      margin: 0 20px; 
-      display: flex;    
-  }
-}
-
-
-/*para pantallas grandes
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-    }
-}*/
-
-
+/* -----tabla----*/
 table {
-  width: 80%; 
-  margin: 0 auto; 
-  border: 1px solid black;
+  width: 60%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 2px solid black;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+.terceraParte {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendario {
+  text-align: left;
+  margin-left: 15%;
+}
+
+.calendario img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.parteIzquierda,
+.container_derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.datos input {
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+
+
+#boton_reserva {
+  width: 200px;
+  padding: 20px;
+  border-radius: 40px;
   text-align: center;
+  padding: 10px;
+
 }
 
-th, td {
-  border: 1px solid black;
-  text-align: center;
-}
-
-
-/*calendario*/
-.calendario{
-  width: 70%;
+#contenedor_BR {
+  margin-top: 20px;
 }
 
 
+/* reponsive moviles */
 
+@media only screen and (max-width: 768px) {
 
+  .col-6 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .calendario {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .contenedor {
+    text-align: center;
+  }
+
+  .boton {
+    width: 80%;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .texto_seleccionaDia {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #mensaje {
+    width: 100%;
+    left: 0;
+    right: 0;
+
+  }
+
+  .segundaParte {
+    margin-left: -20px;
+  }
+
+  table {
+    margin-top: 20px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .container_derecha .contenedor {
+    margin-top: 70px;
+
+  }
+
+}
 
 

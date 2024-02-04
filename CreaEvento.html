@@ -4,45 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styleIndex.css"/>
-    <link rel="stylesheet" href="styles/styleEncabezado.css"/>
+    <link rel="stylesheet" href="styles/styleIndex.css" />
+    <link rel="stylesheet" href="styles/styleEncabezado.css" />
     <title>CREA TU EVENTO</title>
 </head>
 
 <body>
-    <div class="encabezado"> 
+    <div class="encabezado">
 
-        <div class="menu container">
-             
+        <div class="menu">
+
             <a href="index.html" class="logo">XEVENT</a>
 
-            <input type="checkbox" id="menu"/>
+            <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="Images/Icono_Hamb.png" class="icono_menu"/>
+                <img src="Images/Icono_Hamb.png" class="icono_menu" />
             </label>
 
-        <nav class="nav_barra">
-            <ul>
-                <li> <a href="index.html">INICIO</a> </li>
-                
-                <li> <a href="eventos.html">MÁS EVENTOS</a> </li>
-                
-                <li> <a href="CreaEvento.html">CREA TU EVENTO</a> </li>
-            </ul>
-        </nav>
-            
+            <nav class="nav_barra">
+                <ul>
+                    <li> <a href="index.html">INICIO</a> </li>
+
+                    <li> <a href="eventos.html">MÁS EVENTOS</a> </li>
+
+                    <li> <a href="CreaEvento.html">CREA TU EVENTO</a> </li>
+                </ul>
+            </nav>
+
         </div>
 
     </div>
 
 
-    <div class="primeraParte">
-        <div id="mensaje">
-            <p>CREA TU EVENTO CON NOSOTROS </p>
-        </div>
+    <div class="primeraParte"> </div>
+
+    <div id="mensaje">
+        <p>CREA TU EVENTO CON NOSOTROS </p>
     </div>
+
     <h1 id="completaR">Completa tu reserva </h1>
-    <hr/>
+
 
 
     <div class="segundaParte">
@@ -87,50 +88,65 @@
                     <td>6 horas</td>
                     <td>200€</td>
                 </tr>
-                
+
             </table>
 
-            <div class="seleccciona_evento">
-                <h2 id="eventoEs">Tu evento es..</h2>
-                <h2 id="texto_seleccionaDia">Selecciona el dia</h2>
 
+            <!--titulos-->
+            <div class="parteIzquierda col-6">
+                <div class="titulos col-6">
+                    <h2 class="texto_seleccionaDia">Selecciona el dia</h2>
+                </div>
+                <!-- calendario -->
+                <div class="container_calendario">
+                    <div class="calendario">
+                        <img src="Images/calendario.png" id="imagen_calendario">
+                    </div>
+                </div>
             </div>
 
-            <h2 id="eventoEs">Tu evento es..</h2>
-            <div class="contenedor">
 
-                <input type="radio" id="boton1" name="grupo" class="oculto" >
-                <label for="boton1" class="boton">Obra de teatro</label>
-            
-                <input type="radio" id="boton2" name="grupo" class="oculto">
-                <label for="boton2" class="boton">Fiesta</label>
-            
-                <input type="radio" id="boton3" name="grupo" class="oculto">
-                <label for="boton3" class="boton">Concierto</label>
+            <div class="container_derecha col-6">
+                <!-- botones luminosos -->
 
-                <input type="radio" id="boton4" name="grupo" class="oculto">
-                <label for="boton4" class="boton">Monólogo</label>
-              </div>
-   
-        <!-- calendario -->
-        <div class="container">
-            <div class="calendario">
-              <img src="Images/calendario.png" id="imagen_calendario">
+                <div class="titulos col-6">
+                    <h2 class="eventoEs">Tu evento es..</h2>
+                </div>
+
+                <div class="contenedor">
+                    <input type="radio" id="boton1" name="grupo" class="oculto">
+                    <label for="boton1" class="boton">Obra de teatro</label>
+
+                    <input type="radio" id="boton2" name="grupo" class="oculto">
+                    <label for="boton2" class="boton">Fiesta</label>
+
+                    <input type="radio" id="boton3" name="grupo" class="oculto">
+                    <label for="boton3" class="boton">Concierto</label>
+
+                    <input type="radio" id="boton4" name="grupo" class="oculto">
+                    <label for="boton4" class="boton">Monólogo</label>
+                </div>
+
+                <!-- rellenar datos -->
+                <div class="datos">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
+
+                    <label for="nomEvento"></label>
+                    <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
+
+                    <!-- boton reservar -->
+                    <div id="contenedor_BR">
+                        <a class="button" id="boton_reserva" href="reserva.html">
+                            RESERVA
+                        </a>
+                    </div>
+                </div>
             </div>
-          
-            <!--rellenar datos -->
-            <div class="datos">
-              <label for="nombre"></label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
-          
-              <label for="nomEvento"></label>
-              <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
-          
-              <!-- boton reservar -->
-              <button type="submit">Reservar</button>
-            </div>
-          </div>
-          
+    </div>
+    </div>
+    </div>
+
 
 
 

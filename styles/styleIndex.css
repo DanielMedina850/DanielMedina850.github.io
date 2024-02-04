@@ -432,11 +432,30 @@ th {
 
 /* ---------------------RESERVAR---------------------------------*/
 
-#formularioReserva{
+
+#formularioReserva {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
  
-  
+
+#formularioReserva div {
+  width: 40%; 
+  margin-bottom: 15px;
+ 
 }
 
-.reservaTitulo{
-  
+#contenedorFormulario {
+  margin: 70px;
+  border: 2px solid black;
+  padding: 20px; 
 }
+
+#contenedorFormulario label {
+  color: black;
+}
+
+
+
+

@@ -437,17 +437,10 @@ th {
 
 .calendario img {
   max-width: 100%;
-  height: auto;
-  display: block;
+  height: auto; 
+  
 }
 
-
-
-.pack {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
 
 .parteIzquierda,
 .container_derecha {
@@ -488,17 +481,17 @@ th {
 }
 
 
-/* reponsive moviles */
 
-@media only screen and (max-width: 768px) {
 
+/* responsive movil y tablet */
+@media only screen and (max-width: 1024px) {
   .col-6 {
     width: 100%;
     box-sizing: border-box;
   }
 
   .calendario {
-    margin-left: 0;
+    margin-left: 10px;
     width: 100%;
   }
 
@@ -513,15 +506,12 @@ th {
   }
 
   .texto_seleccionaDia {
-    text-align: center;
-    margin-top: 10px;
+    margin-bottom: 0; 
   }
 
   #mensaje {
-    width: 100%;
-    left: 0;
-    right: 0;
-
+    
+   
   }
 
   .segundaParte {
@@ -532,22 +522,15 @@ th {
     margin-top: 20px;
   }
 
-  th,
-  td {
+  th,td {
     padding: 10px;
     font-size: 14px;
   }
 
   .container_derecha .contenedor {
     margin-top: 70px;
+  }
 
-  }
-  .pack {
-    grid-template-columns: 1fr;
-  }
 
 }
-
-
-
 

@@ -82,6 +82,11 @@ html {
       width: 100%;
     }
 
+    #titulo_aboutUs{
+  font-family: Moderno;
+  font-size: 7vw;
+}
+
     #contenedor_titulo > h1{
       font-size: 7vw !important;
     } 
@@ -114,6 +119,14 @@ html {
   padding: 15px;
 }
 
+h1{
+  font-family: Moderno;
+}
+
+#titulo_aboutUs{
+  font-family: Moderno;
+  font-size: 5vw;
+}
 p {
   margin: 20px;
 }
@@ -518,6 +531,9 @@ td {
 
 /* ---------------------RESERVAR---------------------------------*/
 
+#content_main{
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
 
 #checkbox { /*CUANDO LA CASILLA NO ESTÁ SELECCIONADA*/
   appearance: none; /*Hay que quitar el predeterminado porque si no, no se puede modificar*/
@@ -527,7 +543,14 @@ td {
   height: 25px;
   border: 3px solid #160e90;
   border-radius: 100%;
-  
+}
+
+.box9 > label{
+  color: red;
+}
+
+.box10 > label{
+  color: red;
 }
 
 
@@ -624,9 +647,6 @@ td {
 
 
 @media only screen and (max-width: 768px) { /*para moviles*/
-
-
-
   .box1 , .box3{ /*grid de los que ocupan la mitad izquierda*/
   
     grid-column-start: 1;

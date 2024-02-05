@@ -338,6 +338,8 @@ input[type=text] {
 
 
 
+
+
 /*Titulo:completa tu reserva*/
 #completaR {
   text-align: center;
@@ -364,7 +366,7 @@ input[type=text] {
   border-radius: 10px; /*borde redondeado*/
   border: 2px solid purple;
   color: purple;
-  padding: 0.5em 1em; /* 0.5em mitad del tamaño de la fuente actual. 1em = al tamaño fuente actual(relleno se ajusta al tamaño) */
+  padding: 1em 1em; /*  1em = al tamaño fuente actual(relleno se ajusta al tamaño) */
   font-size: 14px;
 }
 
@@ -398,6 +400,20 @@ td {
   border: 2px solid black;
 }
 
+table th{
+  background-color: pink ;
+  color:purple;
+}
+
+td[colspan], [rowspan] {
+  background-color: pink ;
+  color:purple;
+}
+
+td {
+    text-align: center;
+}
+
 
 
 .terceraParte {
@@ -421,14 +437,14 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  
 }
 
 .datos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 90px;
+  margin-top: 50px;
+  
 }
 
 .datos input {
@@ -436,8 +452,10 @@ td {
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
-  padding: 12px;
+  padding: 18px;
   margin-bottom: 30px;
+ 
+ 
 }
 
 
@@ -450,15 +468,12 @@ td {
 
 }
 
-#contenedor_BR {
-  margin-top: 20px;
-}
 
 
 
 
 /* responsive movil y tablet */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .col-6 {
     width: 100%;
     box-sizing: border-box;
@@ -500,14 +515,30 @@ td {
   .parteDerecha .contenedor {
     margin-top: 10px;
   }
-
   #mensaje {
-    
+    bottom:auto;
+    top: 32%;
     width: 100%;
-    flex:1;
+    text-align: right;
+   
+   }
+
   }
 
-}
+  
+  @media only screen and (min-width: 300px) and (max-width: 1100px) {
+    #mensaje {
+      width: 100%;
+      right: 0;
+      text-align: right;
+      top:655px;
+    }
+  }
+  
+
+
+
+
 
 
 

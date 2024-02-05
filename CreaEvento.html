@@ -43,7 +43,7 @@
         </div>
     </div>
 
-
+     <div class="pack">
     <div class="segundaParte">
         <h1 id="completaR">Completa tu reserva </h1>
         <form action="index.html">
@@ -56,13 +56,13 @@
                 </tr>
                 <tr>
                     <td rowspan="2">1</td>
-                    <td>Con terraza</td>
+                    <td rowspan>Con terraza</td>
                     <td>900</td>
                     <td>5 horas</td>
                     <td>1500€</td>
                 </tr>
                 <tr>
-                    <td>Sin terraza</td>
+                    <td rowspan>Sin terraza</td>
                     <td>850</td>
                     <td>4 horas</td>
                     <td>1000€</td>
@@ -128,11 +128,11 @@
 
                 <!-- rellenar datos -->
                 <div class="datos">
-                    <label for="nombre"></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre*" required>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"required>
 
-                    <label for="nomEvento"></label>
-                    <input type="text" id="nombre" name="nomEvento" placeholder="Nombre de tu evento*" required>
+                    <label for="nomEvento">Nombre de tu evento</label>
+                    <input type="text" id="nombre" name="nomEvento" required>
 
                     <!-- boton reservar -->
                     <div id="contenedor_BR">
@@ -142,6 +142,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
 

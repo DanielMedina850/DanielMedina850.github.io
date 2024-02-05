@@ -647,7 +647,7 @@ td {
 }
 
 
-@media only screen and (max-width: 768px) { /*para moviles*/
+@media only screen and (max-width: 768px) {/*para moviles*/
 
   #contenedor_form, #reserva_form {
     margin: 0 auto;
@@ -656,11 +656,11 @@ td {
   .box1 , .box3{ /*grid de los que ocupan la mitad izquierda*/
   
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 2;
   
   }
   .box2 , .box4{/*grid de los que ocupan la mitad derecha*/
-    grid-column-start: 1;
+    grid-column-start: 4;
     grid-column-end: 5;
   }
   
@@ -670,10 +670,10 @@ td {
   }
   .box7{
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 4;
   }
   .box8{
-    grid-column-start: 1;
+    grid-column-start: 4;
     grid-column-end: 5;
   }
   
@@ -710,5 +710,6 @@ td {
     margin-top: 10px;
     margin-right:0;
   }
+
 
   }

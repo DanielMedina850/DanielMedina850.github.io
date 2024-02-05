@@ -68,8 +68,11 @@ html {
     }
 
     #contenedor_concierto_texto > p{ /* cambiar tamaño de la fuente*/
-      font-size: 3vw;
+      font-size: 3vw !important;
       }
+      #contenedor_titulo > h1{
+        font-size: 7vw !important;
+      } 
 
   
   }
@@ -80,7 +83,7 @@ html {
     }
 
     #contenedor_titulo > h1{
-      font-size: 30px;
+      font-size: 7vw !important;
     } 
     
     #contenedor_form > h1{
@@ -143,7 +146,6 @@ a {
 .imagen_evento{
   width: 100%;
   object-fit: cover;
-  filter: brightness(70%);
   height: 90vh;
 }
 

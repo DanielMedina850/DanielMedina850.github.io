@@ -315,38 +315,18 @@ input[type=text] {
 /*      contactanos          */
 
 
-/* INDEX CSS*/
-
-
-/* MAS EVENTOS CSS*/
-
-
-
-/* MAS EVENTOS CSS*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*------------------------------CREAR EVENTO---------------------------*/
-/*imagen+ responsive*/
+/*imagen fondo */
 .primeraParte {
   background-image: url(../Images/gente.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 600px;  /*altura imagen*/
+  
 }
-
-
 
 
 /*mensaje crear evento*/
@@ -357,7 +337,6 @@ input[type=text] {
   background-color: #5a5a5a;
   opacity: 70%;
 }
-
 
 
 
@@ -382,18 +361,17 @@ input[type=text] {
 
 /*-------------------BOTONES-TECLEADO-OTRO COLOR*-----------------------*/
 
-.contenedor .boton {
+.contenedor .boton { 
   background-color: pink;
-  border-radius: 10px;
+  border-radius: 10px; /*borde redondeado*/
   border: 2px solid purple;
   color: purple;
-  padding: 0.5em 1em;
-  cursor: pointer;
+  padding: 0.5em 1em; /* 0.5em mitad del tamaño de la fuente actual. 1em = al tamaño fuente actual(relleno se ajusta al tamaño) */
   font-size: 14px;
 }
 
 
-.boton:hover {
+.boton:hover { /*sobre el elemento cambia de color*/
   background-color: purple;
   color: pink;
 }
@@ -405,7 +383,7 @@ input[type="radio"]:checked+.boton {
   border-inline: rgb(255, 81, 238);
 }
 
-.oculto {
+.oculto { /*ocultar el radio*/
   display: none;
 }
 
@@ -422,9 +400,6 @@ td {
   border: 2px solid black;
 }
 
-th {
-  background-color: #f2f2f2;
-}
 
 
 .terceraParte {
@@ -438,14 +413,13 @@ th {
 }
 
 .calendario img {
-  max-width: 100%;
-  height: auto; 
-  
+  width: 100%;
+
 }
 
 
 .parteIzquierda,
-.container_derecha {
+.parteDerecha {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -511,10 +485,6 @@ th {
     margin-bottom: 0; 
   }
 
-  #mensaje {
-    
-   
-  }
 
   .segundaParte {
     margin-left: -20px;
@@ -529,10 +499,15 @@ th {
     font-size: 14px;
   }
 
-  .container_derecha .contenedor {
-    margin-top: 70px;
+  .parteDerecha .contenedor {
+    margin-top: 10px;
   }
 
+  #mensaje {
+    
+    width: 100%;
+    flex:1;
+  }
 
 }
 

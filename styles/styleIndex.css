@@ -407,30 +407,18 @@ input[type="radio"]:checked+.boton {
 /* -----tabla----*/
 table {
   width: 60%;
-  margin: 10px auto;
-  border-collapse: collapse;
+  margin: auto;
+  border-radius: 5px;
+  padding: 25px;
+  
 }
 
 th,
 td {
   padding: 15px;
   border: 2px solid black;
+  text-align: center;
 }
-
-table th{
-  background-color: pink ;
-  color:purple;
-}
-
-td[colspan], [rowspan] {
-  background-color: pink ;
-  color:purple;
-}
-
-td {
-    text-align: center;
-}
-
 
 
 .terceraParte {

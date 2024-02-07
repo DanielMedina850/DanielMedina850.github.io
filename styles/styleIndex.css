@@ -401,7 +401,7 @@ th, td {
   background-color: white;
 }
 
-.terceraParte {
+.terceraParte { /* imagen calendario */
   display: flex;
   flex-wrap: wrap;
 }
@@ -416,21 +416,21 @@ th, td {
   width: 100%;
 }
 
-.parteIzquierda, .parteDerecha {
+.parteIzquierda, .parteDerecha { /* division de terceraParte */
   display: flex;
   flex-direction: column;
   align-items: center;
   
 }
 
-.datos {
+.datos { /* inputs de datos */
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 20%;   
 }
 
-.datos input {
+.datos input { 
   max-width: 300px;
   width: 100%;
   box-sizing: border-box;

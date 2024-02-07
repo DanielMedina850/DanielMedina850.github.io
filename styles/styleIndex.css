@@ -82,6 +82,11 @@ html {
       width: 100%;
     }
 
+    #button_concierto, #button_reserva{
+      padding: 5px !important;
+
+    }
+
     #titulo_aboutUs{
   font-family: Moderno;
   font-size: 7vw;
@@ -157,7 +162,7 @@ a {
   font-size: 1rem;
 }
 
-.imagen_evento{
+.imagen_evento{ /* imagenes de eventos y mas eventos*/
   width: 100%;
   object-fit: cover;
   height: 90vh;
@@ -170,6 +175,7 @@ a {
 .button{ /*botones en general*/
 background-color: #5a5a5a;
 padding: 20px;
+border: 2px solid grey;
 }
 
 
@@ -215,11 +221,13 @@ padding: 20px;
 
 
 #button_concierto{
+  /*BOTON DE CATEGORIA*/
   position: absolute;
   top: 0;
   left: 0;
   padding: 10px;
   border-radius: 40px;
+  background-color: none !important;
 }
 
 #button_reserva{

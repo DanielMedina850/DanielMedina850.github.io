@@ -272,8 +272,10 @@ padding: 20px;
 
 #contenedor_form, #reserva_form{/*contenedor de formularios de opinion y reserva*/
   width: 100%;
-  max-width: 700px;
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);   
+  max-width: 660px;
+  /*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);   
+  */
+  background-image: linear-gradient(to right top, #0f768e,#8f4bb1,#c34149 );
   padding: 28px;
   margin: 0 28px;
   border-radius: 10px;
@@ -320,7 +322,8 @@ input[type=text] {
 
   /*boton de envio*/
   .submit_button input{
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    /*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);*/
+    background-image: linear-gradient(to right top, #0d596a,#66387c,#96353b );
     color: white;
     padding: 12px 20px;
     border: none;
@@ -547,7 +550,8 @@ td {
 /* ---------------------RESERVAR---------------------------------*/
 
 #content_main{
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(to right top, #65bacd,#986dae,#bd7075 );
+  /*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);*/
 }
 
 #checkbox { /*CUANDO LA CASILLA NO ESTÁ SELECCIONADA*/
@@ -561,11 +565,11 @@ td {
 }
 
 .box9 > label{
-  color: red;
+  color: rgb(255, 255, 255);
 }
 
 .box10 > label{
-  color: red;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -640,19 +644,19 @@ td {
 }
 
 
-#box11_1{
+#box11_1{ /* ticket */
   margin-top: 4px;
   margin-left: 30px;
 
 }
 
-#box11_2{
+#box11_2{ /* total */
   margin-left:-190px;
   color: rgb(21, 21, 139);
   
 }
 
-#box11_3{
+#box11_3{ /* boton de reservar */
   margin-top: 10px;
   margin-right: -60px;
 }

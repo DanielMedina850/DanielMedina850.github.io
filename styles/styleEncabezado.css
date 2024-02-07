@@ -126,8 +126,6 @@ body{
 
 }
 
- 
-  
   footer{
     background-color: #020a24;
     position: absolute;
@@ -142,7 +140,6 @@ body{
 
   .info{
     position: relative;
-    border: 1px solid green;
 
   }
 
@@ -151,7 +148,7 @@ body{
   .Icono_X{
     width: 25px;
     position: absolute;
-    top:18px;
+    top:20px;
     left:50%;
     bottom: 0;
     right: 0;
@@ -162,7 +159,7 @@ body{
   .Icono_Fb{
     width: 25px;
     position: absolute;
-    top:18px;
+    top:20px;
     left: 68%;
     bottom: 0;
     right: 0;
@@ -173,7 +170,7 @@ body{
   .Icono_Ig{
     width: 25px;
     position: absolute;
-    top:18px;
+    top:20px;
     left: 85%;
     bottom: 0;
     right: 0;
@@ -188,7 +185,7 @@ body{
     top:12px;
     left: 0%;
     bottom: 0;
-    right: 300px;
+    right:100px;
     margin: auto;
     font-size: 15px;
     width: 60%;
@@ -202,33 +199,33 @@ body{
         height: 35px;
     }
     .Icono_X{
-        width: 30px;
+        width: 25px;
         position: absolute;
-        top: -0;
+        top: 17px;
         left: 74%;
-        bottom: 10;
+        bottom: 0;
         right: 0;
         margin: auto;
         
       }
     
       .Icono_Fb{
-        width: 30px;
+        width: 25px;
         position: absolute;
-        top: 0;
+        top: 17px;
         left: 82%;
-        bottom: 10;
+        bottom: 0;
         right: 0;
         margin: auto;
         
       }
     
       .Icono_Ig{
-        width: 30px;
+        width: 25px;
         position: absolute;
-        top: 0;
+        top: 17px;
         left: 90%;
-        bottom: 10;
+        bottom: 0;
         right: 0;
         margin: auto;
       

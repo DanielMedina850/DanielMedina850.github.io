@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body,
 html {
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8);
 }
 
 
@@ -61,7 +61,6 @@ html {
   width: 100%;
 }
 
-
 @media only screen and (max-width: 1024px) { /* para tablet */
     [class*="col-"] {
       width: 100%;
@@ -82,30 +81,28 @@ html {
       width: 100%;
     }
 
-    #button_concierto, #button_reserva{
+    #button_concierto, #button_reserva{ /* espaciado para los botones*/
       padding: 5px !important;
 
     }
 
-    #titulo_aboutUs{
-  font-family: Moderno;
+    #titulo_aboutUs{ /*  tamaño del titulo de aboutUs*/
   font-size: 7vw;
   }
 
-    #contenedor_titulo > h1{
-      font-family: Moderno;
+    #contenedor_titulo > h1{ /* Aqui afecto al titulo del principal de la pagina*/
       font-size: 7vw !important;
     } 
     
-    #contenedor_form > h1{
+    #contenedor_form > h1{ /* afecto el tamaño del titulo del formulario */
       font-size: 30px;
     } 
 
-    #contenedor_button_reservas{
+    #contenedor_button_reservas{ /* muevo el boton de reserva a la izquierda */
       left: 0;
     } 
     
-    #button_reserva{
+    #button_reserva{ /* aumento el tamaño de la pagina */
       width: 300px;
     }
 
@@ -120,25 +117,19 @@ html {
   }
   
 
-[class*="col-"] {
+[class*="col-"] {/* muevo los inputs a la izquierda */
   float: left;
   padding: 15px;
 }
 
-h1{
-  font-family: Moderno;
-}
-
-#titulo_aboutUs{
-  font-family: Moderno;
+#titulo_aboutUs{ /* tamaño de la pagina */
   font-size: 5vw;
 }
-p {
+p {/* agrego margen a los parrafos*/
   margin: 20px;
 }
 
-#contenedor_titulo {
-  /* titulo */
+#contenedor_titulo { /* titulo */
   text-align: center;
   color: black;
   font-size: 30px;
@@ -155,8 +146,7 @@ li{ /*listas*/
     list-style: none;
 }
 
-a {
-  /*enlaces*/
+a {/*enlaces*/
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -173,33 +163,24 @@ a {
 
 
 .button{ /*botones en general*/
-background-color: #5a5a5a;
+  background-color: #5a5a5a;
 padding: 20px;
 border: 2px solid grey;
 }
 
 
-#contenedor_button_concierto{
+#contenedor_button_concierto{ /* contenedor concierto */
   height: 50px;
 position: absolute;
 padding: 20px;
   }
   
 
-.button:hover {
-  /*hover de los botones*/
+.button:hover {/*hover de los botones*/
   background-color: #868686;
 }
 
-#contenedor_concierto_texto{ /* contenedor del texto de la funcion*/
-  position: absolute;
-  height: auto;
-  font-size: 1vw;
-  left: 20px;
-  margin-top: 35px;
-}
-
-#contenedor_buttons_texto{
+#contenedor_buttons_texto{ /*contenedor de los botones y del texto*/
   padding: 30px;
   min-height: 300px;
   overflow: hidden;
@@ -207,10 +188,18 @@ padding: 20px;
   line-height: 1.8;
   width: 100%;
   color: rgb(255, 250, 223);
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec);
 }
 
-#contenedor_button_reservas{
+#contenedor_concierto_texto{ /* contenedor del texto del concierto*/
+  position: absolute;
+  height: auto;
+  font-size: 1vw;
+  left: 20px;
+  margin-top: 35px;
+}
+
+#contenedor_button_reservas{ /* contenedor del boton de reserva*/
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -218,19 +207,17 @@ padding: 20px;
   padding: 20px;
 }
 
-
-
-#button_concierto{
-  /*BOTON DE CATEGORIA*/
+#button_concierto{ /*BOTON DE CATEGORIA*/
+  background-color: #8d8d8d !important;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px;
+  padding: 5px;
   border-radius: 40px;
-  background-color: none !important;
+  pointer-events: none;
 }
 
-#button_reserva{
+#button_reserva{ /* boton de reserva*/
     position: absolute;
     width: 200px;
     padding: 20px;
@@ -259,8 +246,7 @@ padding: 20px;
   margin: 0;
 }
 
-#content_main {
-  /*contenedor main de form*/
+#content_main { /*contenedor main de form*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,7 +256,7 @@ padding: 20px;
   width: 100%;
 }
 
-#contenedor_form, #reserva_form{/*contenedor de formularios de opinion y reserva*/
+#contenedor_form, #reserva_form{ /*contenedor de formularios de opinion y reserva*/
   width: 100%;
   max-width: 660px;
   /*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);   
@@ -281,8 +267,7 @@ padding: 20px;
   border-radius: 10px;
 }
 
-.titulo_form {
-  /*texto de formulario*/
+.titulo_form { /*texto de formulario*/
   font-size: 50px;
   font-weight: 600;
   text-align: center;
@@ -291,10 +276,7 @@ padding: 20px;
   border-bottom: 2px solid black;
 }
 
-textarea
-
-/*textarea responsive*/
-  {
+textarea {/*textarea responsive*/
   width: 100%;
   padding: 8px 18px;
   margin: 9px 0;
@@ -305,23 +287,18 @@ textarea
   max-width: 100%;
 }
 
-form label {
-  /* textos blancos*/
+form label { /* textos blancos*/
   color: white;
 }
 
-/*caja de los datos de usuario*/
-
-input[type=text] {
+input[type=text] { /*caja de los datos de usuario*/
   border-radius: 5px;
   border-color: white;
   height: 25px;
   outline: none;
   width: 100%;
 }
-
-  /*boton de envio*/
-  .submit_button input{
+  .submit_button input{  /*boton de envio*/
     /*background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);*/
     background-image: linear-gradient(to right top, #0d596a,#66387c,#96353b );
     color: white;
@@ -333,10 +310,11 @@ input[type=text] {
     display: block;
     margin: 0 auto;
   }
-  /*hover del submit*/
-  .submit_button input:hover{
+  .submit_button input:hover{ /*hover del submit*/
     background-image: linear-gradient(to right top, #d36da7, #ca79bb, #be78d1, #a486d9, #7878e0, #799bec, #69aaf4, #56b6f7, #3cc9fc, #41dfff, #00eeff, #2cfcee);
   }
+
+
 
 /*      contactanos          */
 
@@ -344,19 +322,18 @@ input[type=text] {
 
 
 /*------------------------------CREAR EVENTO---------------------------*/
-/*imagen fondo */
-.primeraParte {
+
+
+
+.primeraParte { /*imagen fondo */
   background-image: url(../Images/gente.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;  /*altura imagen*/
-  
 }
 
-
-/*mensaje crear evento*/
-#mensaje {
+#mensaje { /*mensaje crear evento*/
   position: absolute;
   right: 0;
   bottom: 65%;
@@ -364,17 +341,12 @@ input[type=text] {
   opacity: 70%;
 }
 
-
-
-
-
-/*Titulo:completa tu reserva*/
-#completaR {
+/*Titulos:completa reserva, evento es, selecciona Dia*/
+#completaR { 
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
   padding-top: 40px;
-
 }
 
 .eventoEs {
@@ -404,8 +376,7 @@ input[type=text] {
   color: pink;
 }
 
-/* Cambia el color cuando el botón esta marcado */
-input[type="radio"]:checked+.boton {
+input[type="radio"]:checked+.boton { /* Cambia el color cuando el botón esta marcado */
   background-color: rgb(255, 81, 238);
   color: blue;
   border-inline: rgb(255, 81, 238);
@@ -421,16 +392,14 @@ table {
   margin: auto;
   border-radius: 5px;
   padding: 25px;
-  
 }
 
-th,
-td {
+th, td {
   padding: 15px;
   border: 2px solid black;
   text-align: center;
+  background-color: white;
 }
-
 
 .terceraParte {
   display: flex;
@@ -440,16 +409,14 @@ td {
 .calendario {
   text-align: left;
   margin-left: 15%;
+  margin-bottom: 10%;
 }
 
 .calendario img {
   width: 100%;
-
 }
 
-
-.parteIzquierda,
-.parteDerecha {
+.parteIzquierda, .parteDerecha {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -460,7 +427,7 @@ td {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  
+  margin-bottom: 20%;   
 }
 
 .datos input {
@@ -470,26 +437,18 @@ td {
   font-size: 16px;
   padding: 18px;
   margin-bottom: 30px;
- 
- 
 }
-
 
 #boton_reserva {
   width: 200px;
-  padding: 20px;
   border-radius: 40px;
   text-align: center;
   padding: 10px;
-
 }
 
 
 
-
-
-/* responsive movil y tablet */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /* responsive movil y tablet */
   .col-6 {
     width: 100%;
     box-sizing: border-box;
@@ -551,15 +510,6 @@ td {
     }
   }
   
-
-
-
-
-
-
-
-
-
 
 /* ---------------------RESERVAR---------------------------------*/
 
@@ -690,7 +640,7 @@ td {
     grid-column-end: 2;
   
   }
-  .box2 , .box4{/*grid de los que ocupan la mitad derecha*/
+  .box2 , .box4{ /*grid de los que ocupan la mitad derecha*/
     grid-column-start: 4;
     grid-column-end: 5;
   }
@@ -724,7 +674,6 @@ td {
   
   }
   
-  
   #box11_1{
     margin-top: 4px;
     margin-left: 30px;
@@ -741,6 +690,5 @@ td {
     margin-top: 10px;
     margin-right:0;
   }
-
 
   }

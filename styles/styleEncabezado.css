@@ -1,26 +1,23 @@
-
-
 *{ /*Afecta a todo*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none; /*para quitar las lineas de los links*/
-    list-style: none; /*para quitar los puntos de la lista*/
+    list-style: none; /*para quitar los puntos de la lista que crea el menú*/
 }
 
 html {
     min-height: 100%;
-    position: relative;
+    position: relative; /*hace de contenedor en el que se adaptará el cabezero y pie de página*/
 }
 
 body{
-       
         margin: 0;
         margin-bottom: 40px;
 }
 
 .menu {
-    max-width: 1000px;
+    max-width: 1000px; /*máximo que llegará a medir el menú*/
     margin:0 auto;
 }
 
@@ -44,13 +41,13 @@ body{
     font-family: Moderno;
     font-size:30px;
     color: yellow; /*color logo*/
-    font-weight: 1000;
+    font-weight: 1000; /*grosor*/
     
 }
 
 .menu .nav_barra ul li {
     position: relative;
-    float: left;
+    float: left; /*para que flote a la izquieda*/
 }
 
 .menu .nav_barra ul li a{
@@ -65,11 +62,11 @@ body{
     color:#fbff10;
 }
 
-#menu{ /*para quitar la caja del checkbox*/
+#menu{ /*para quitar el estilo del checkbox y poder editarlo después*/
     display: none;
 }
 
-.icono_menu{
+.icono_menu{ /*icono de hamburguesa*/
     width: 40px;
 }
 
@@ -116,22 +113,24 @@ body{
     
 
     .menu .nav_barra ul li{
-        width: 100%; /*para forma de columan*/
+        width: 100%; /*para forma de columna*/
         text-align: center;
     }
 
-    #menu:checked ~ .nav_barra{
+    #menu:checked ~ .nav_barra{ /*al hacer clic en el checkbox, aparece el menú*/
         display: initial;
     }
 
+    
+
 }
 
-  footer{
+  footer{ /*pie de pagina*/
     background-color: #020a24;
-    position: absolute;
-    bottom: 0;
+    position: absolute; /*html es relative*/
+    bottom: 0; /*pegado siempre abajo del html*/
     width: 100%;
-    height: 40px;
+    height: 40px; /*altura desde abajo del footer*/
     color: rgb(246, 255, 0);
     font-size: 15px;
     
@@ -139,15 +138,15 @@ body{
   }
 
   .info{
-    position: relative;
+    position: relative; /*aqui irán todos los datos del footer*/
 
   }
 
 
   @media (max-width: 768px){ /*versión movil y tablet(?*/
-  .Icono_X{
+  .Icono_X{ /*twiter movil*/
     width: 25px;
-    position: absolute;
+    position: absolute; /*dentro de info*/
     top:20px;
     left:50%;
     bottom: 0;
@@ -156,9 +155,9 @@ body{
     
   }
 
-  .Icono_Fb{
+  .Icono_Fb{/*facebook movil*/
     width: 25px;
-    position: absolute;
+    position: absolute;/*dentro de info*/
     top:20px;
     left: 68%;
     bottom: 0;
@@ -167,9 +166,9 @@ body{
     
   }
 
-  .Icono_Ig{
+  .Icono_Ig{/*instagram movil*/
     width: 25px;
-    position: absolute;
+    position: absolute;/*dentro de info*/
     top:20px;
     left: 85%;
     bottom: 0;
@@ -179,7 +178,7 @@ body{
   }
 
 
-#textoTel{
+#textoTel{/*telefono de movil*/
     
     position: absolute;
     top:12px;
@@ -194,7 +193,8 @@ body{
 
 }
 
-@media (min-width: 768px){ /*VERSION MONITORES*/
+@media (min-width: 768px){ /*versión monitores*/
+    
     footer{
         height: 35px;
     }

@@ -136,57 +136,52 @@ body{
     height: 40px;
     color: rgb(246, 255, 0);
     font-size: 15px;
+    
    
   }
 
   .info{
     position: relative;
+    border: 1px solid green;
 
   }
 
 
   @media (max-width: 768px){ /*versión movil y tablet(?*/
   .Icono_X{
-    width: 15px;
+    width: 25px;
     position: absolute;
-    top:25px;
-    left: 69%;
+    top:18px;
+    left:50%;
     bottom: 0;
     right: 0;
     margin: auto;
+    
   }
 
   .Icono_Fb{
-    width: 13px;
+    width: 25px;
     position: absolute;
-    top:25px;
-    left: 81%;
+    top:18px;
+    left: 68%;
     bottom: 0;
     right: 0;
     margin: auto;
+    
   }
 
   .Icono_Ig{
-    width: 15px;
+    width: 25px;
     position: absolute;
-    top:25px;
-    left: 93%;
+    top:18px;
+    left: 85%;
     bottom: 0;
     right: 0;
     margin: auto;
+    
   }
 
-#textoSiguenos{
-    
-    position: absolute;
-    top:4px;
-    left: 83%;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    font-size: 11px;
-    width: 34%;
-}
+
 #textoTel{
     
     position: absolute;
@@ -196,41 +191,61 @@ body{
     right: 300px;
     margin: auto;
     font-size: 15px;
-    width: 34%;
+    width: 60%;
+   
 }
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px){ /*VERSION MONITORES*/
+    footer{
+        height: 35px;
+    }
     .Icono_X{
-        width: 25px;
+        width: 30px;
         position: absolute;
-        top: 9;
-        left: 79%;
-        bottom: 0;
+        top: -0;
+        left: 74%;
+        bottom: 10;
         right: 0;
         margin: auto;
+        
       }
     
       .Icono_Fb{
-        width: 25px;
+        width: 30px;
         position: absolute;
-        top: 9;
-        left: 87%;
-        bottom: 0;
+        top: 0;
+        left: 82%;
+        bottom: 10;
         right: 0;
         margin: auto;
+        
       }
     
       .Icono_Ig{
-        width: 25px;
+        width: 30px;
         position: absolute;
-        top: 9;
-        left: 95%;
-        bottom: 0;
+        top: 0;
+        left: 90%;
+        bottom: 10;
         right: 0;
         margin: auto;
+      
       }
+
+      #textoTel{
+    
+        position: absolute;
+        top:10px;
+        left: 0;
+        bottom: 0;
+        right: 85%;
+        margin: auto;
+        font-size: 13px;
+        width: 15%;
+        
+    }
 
 }
 
